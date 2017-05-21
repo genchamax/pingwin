@@ -1,5 +1,5 @@
 <!-- main app container-->
-<nav class="navbar navbar-fixed-top navbar-dark bg-inverse">
+<nav class="navbar navbar-default navbar-inverse navbar-static-top main">
   <div class="container">
     <a class="navbar-brand">Пінгвін</a>
     <ul class="nav navbar-nav" routerLinkActive="active">
@@ -12,15 +12,4 @@
     </ul>
   </div>
 </nav>
-<div class="jumbotron">
-  <div class="container">
-    <div class="col-sm-8 col-sm-offset-2">
-      <router-outlet></router-outlet>
-    </div>
-  </div>
-</div>
-<!--
-<button type="button" class="btn btn-primary" ng-model="singleModel" uib-btn-checkbox btn-checkbox-true="1" btn-checkbox-false="0">
-  Single Toggle
-</button>
--->
+<router-outlet></router-outlet>
