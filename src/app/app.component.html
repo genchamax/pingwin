@@ -1,15 +1,21 @@
 <!-- main app container-->
-<nav class="navbar navbar-default navbar-inverse navbar-static-top main">
-  <div class="container">
-    <a class="navbar-brand">Пінгвін</a>
-    <ul class="nav navbar-nav" routerLinkActive="active">
+<nav class="navbar navbar-toggleable-md fixed-top navbar-light bg-faded">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand" href="#">
+    <img src="favicon.ico" width="30" height="30" class="d-inline-block align-top" alt="">
+    Пінгвін</a>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav mr-auto mt-2 mt-md-0" routerLinkActive="active">
       <li class="nav-item"><a class="nav-link" routerLink="courses">Статті</a></li>
       <li class="nav-item"><a class="nav-link" routerLink="courses">Відео</a></li>
     </ul>
-    <ul class="nav navbar-nav navbar-right">
-      <li class="nav-item"><a class="nav-link" routerLink="login">Login</a></li>
-      <li class="nav-item"><a class="nav-link" routerLink="regestration">Register</a></li>
-    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="button">Login</button>
+    </form>
   </div>
 </nav>
 <router-outlet></router-outlet>
+
