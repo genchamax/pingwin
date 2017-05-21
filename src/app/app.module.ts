@@ -14,6 +14,8 @@ import {UserService} from "./components/user/user.service";
 import {MockBackend} from "@angular/http/testing";
 import {fakeBackendProvider} from "./components/auth/auth.helper";
 
+/*import {NgbModule} from '@ng-bootstrap/ng-bootstrap';*/
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,6 +26,7 @@ import {fakeBackendProvider} from "./components/auth/auth.helper";
     BrowserModule,
     FormsModule,
     HttpModule,
+    /*NgbModule.forRoot(),*/
     routing
   ],
   providers: [
