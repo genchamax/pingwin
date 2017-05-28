@@ -1,3 +1,9 @@
 #nav1 {
   background: rgba(81,123,150, 0.3)!important;
 }
+
+.accent-btn {
+  border-color: #4169e1;
+  background-color: 	#4169e1;
+  font-family:'CaviarDreams';
+}

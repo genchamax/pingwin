@@ -16,31 +16,31 @@
 
 .card-block {
   border-radius: 0 6px 6px 0;
-  background-color: #43D5B1;
+  background-color: #f3fafe;
   height: 900px;
 }
 
 .list-group {
   padding-right: 0px;
   border-radius: 6px 0 0 6px;
-  background-color: #4169e1;
+  background-color: #cfebfd;
 }
 
 a.list-group-item {
   border: 0px;
-  background-color: #4169e1;
-  color: #FFFFFF;
+  background-color: #cfebfd;
+  color: #494949;
 }
 a.list-group-item:hover,
 a.list-group-item:focus {
-  background-color: #43D5B1;
+  background-color: #f3fafe;
 }
 
 a.list-group-item.active,
 a.list-group-item.active:hover,
 a.list-group-item.active:focus {
   color: #FFF;
-  background-color: #43D5B1;
+  background-color: #f3fafe;
   border: none;
 }
 
