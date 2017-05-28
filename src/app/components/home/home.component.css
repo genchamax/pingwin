@@ -10,3 +10,46 @@
   font-family:'CaviarDreams';
 }
 
+.card {
+  background-color: transparent;
+}
+
+.card-block {
+  border-radius: 0 6px 6px 0;
+  background-color: #43D5B1;
+  height: 900px;
+}
+
+.list-group {
+  padding-right: 0px;
+  border-radius: 6px 0 0 6px;
+  background-color: #4169e1;
+}
+
+a.list-group-item {
+  border: 0px;
+  background-color: #4169e1;
+  color: #FFFFFF;
+}
+a.list-group-item:hover,
+a.list-group-item:focus {
+  background-color: #43D5B1;
+}
+
+a.list-group-item.active,
+a.list-group-item.active:hover,
+a.list-group-item.active:focus {
+  color: #FFF;
+  background-color: #43D5B1;
+  border: none;
+}
+
+.list-group-item:first-child {
+  border-radius: 6px 0 0;
+}
+
+.content-container {
+  height: 900px;
+  border-radius: 6px;
+  border-color: transparent;
+}
