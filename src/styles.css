@@ -1,5 +1,5 @@
 @font-face{
-  font-family: 'MY';
+  font-family: 'CaviarDreams';
   src: url('assets/css/fonts/CaviarDreams-webfont.eot');
   src: url('assets/css/fonts/CaviarDreams-webfont.eot?iefix') format('eot'),
   url('assets/css/fonts/CaviarDreams-webfont.woff') format('woff'),
@@ -7,10 +7,16 @@
   url('assets/css/fonts/CaviarDreams-webfont.svg#webfont') format('svg');
 }
 body {
-  /*font-family: "proxima-nova-soft", Arial, "Helvetica Neue", Helvetica, sans-serif;*/
-  font-family:'MY';
+  background-color: #87CEFA;
+  font-family:'CaviarDreams';
   font-weight: 400;
   line-height: 24px;
   color: #494949;
   letter-spacing: 0.5px;
+}
+
+/*buttons*/
+.accent-btn {
+  border-color: #4169e1;
+  background-color: 	#4169e1;
 }

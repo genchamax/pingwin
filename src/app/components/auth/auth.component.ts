@@ -8,7 +8,8 @@ import { AuthenticationService } from './auth.service';
 
 @Component({
   moduleId: module.id,
-  templateUrl: './auth.component.html'
+  templateUrl: './auth.component.html',
+  styleUrls:['./auth.component.css']
 })
 
 export class LoginComponent implements OnInit {
