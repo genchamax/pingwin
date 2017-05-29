@@ -7,26 +7,34 @@ import {AppComponent} from './app.component';
 import {routing} from './app.routing';
 
 import {AuthGuard} from './components/auth/auth.guard';
-import {HomeComponent} from "./components/home/home.component";
 import {LoginComponent} from "./components/auth/auth.component";
 import {AuthenticationService} from "./components/auth/auth.service";
 import {UserService} from "./components/user/user.service";
 import {MockBackend} from "@angular/http/testing";
 import {fakeBackendProvider} from "./components/auth/auth.helper";
 
+/*Student*/
+import {StudentComponent} from "./components/student/student.component";
+import {StudentProfile} from "./components/student/profile/student-profile.component";
+import {StudentTraning} from "./components/student/training/student-traning.component";
+
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import {StudentRoutingModule} from "./components/student/student-routing.module";
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    HomeComponent,
+    StudentComponent,
+    StudentProfile,
+    StudentTraning
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
     NgbModule.forRoot(),
+    StudentRoutingModule,
     routing
   ],
   providers: [

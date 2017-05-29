@@ -8,11 +8,11 @@ import { UserService } from '../user/user.service';
 
 @Component({
   moduleId: module.id,
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  templateUrl: './student.component.html',
+  styleUrls: ['./student.component.css']
 })
 
-export class HomeComponent implements OnInit {
+export class StudentComponent implements OnInit {
   users: User[] = [];
 
   constructor(private userService: UserService) { }
