@@ -15,8 +15,8 @@ import {fakeBackendProvider} from "./components/auth/auth.helper";
 
 /*Student*/
 import {StudentComponent} from "./components/student/student.component";
-import {StudentProfile} from "./components/student/profile/student-profile.component";
-import {StudentTraning} from "./components/student/training/student-traning.component";
+import {StudentProfileComponent} from "./components/student/profile/student-profile.component";
+import {StudentTraningComponent} from "./components/student/training/student-traning.component";
 
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import {StudentRoutingModule} from "./components/student/student-routing.module";
@@ -26,8 +26,8 @@ import {StudentRoutingModule} from "./components/student/student-routing.module"
     AppComponent,
     LoginComponent,
     StudentComponent,
-    StudentProfile,
-    StudentTraning
+    StudentProfileComponent,
+    StudentTraningComponent
   ],
   imports: [
     BrowserModule,

@@ -9,5 +9,5 @@ import {Component} from '@angular/core';
   styleUrls: ['./student-traning.component.css']
 })
 
-export class StudentTraning {
+export class StudentTraningComponent {
 }
