@@ -8,5 +8,4 @@ export class Article {
   authorId: number;
   // TODO: Leave only one type
   publishDate: Date | number | string;
-  imageUrl: string;
 }
