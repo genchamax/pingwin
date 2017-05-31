@@ -16,4 +16,6 @@ export class CreateArticleComponent implements OnInit {
   ngOnInit(): void {
     //FIXME: Write code here
   }
+
+//  TODO Write method that replace double quotes to single qoutes
 }
