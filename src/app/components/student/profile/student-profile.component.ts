@@ -10,5 +10,5 @@ import {Component} from '@angular/core';
   styleUrls: ['./student-profile.component.css']
 })
 
-export class StudentProfile {
+export class StudentProfileComponent {
 }
