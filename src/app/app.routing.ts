@@ -8,7 +8,6 @@ import {AuthGuard} from "./components/auth/auth.guard";
 import {BlogComponent} from "./components/blog/blog.component";
 import {CreateArticleComponent} from "./components/blog/article/create-article.component";
 import {StudentComponent} from "./components/student/student.component";
-import {StudentProfileComponent} from "./components/student/profile/student-profile.component";
 
 const appRoutes: Routes = [
   {path: 'login', component: LoginComponent},

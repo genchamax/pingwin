@@ -1,1 +1,24 @@
-<h1>Profile</h1>
+<div class="container student-profile-container">
+  <div class="row">
+    <div class="img-profile col-4.5">
+      <img src="../../../../assets/img/student-profile/success-kid.jpg" class="rounded float-left" alt="...">
+    </div>
+    <div class="main_info col-7">
+      <h2>Дмитро Піддубний</h2>
+      <h3>вік: 10</h3>
+      <h3>школа: Школа №32</h3>
+    </div>
+    <div class="main_info col-0.5">
+      <a class="btn btn-info" href="#">
+        <i class="fa fa-pencil-square-o fa-1x" aria-hidden="true"></i>
+      </a>
+    </div>
+  </div>
+  <div class="row margin-10">
+    <h2>Прогрес</h2>
+  </div>
+  <div class="row">
+    <ngb-progressbar class="student-progres col-11" type="info" [value]="30" [striped]="true">250 слів</ngb-progressbar>
+  </div>
+</div>
+

@@ -17,6 +17,7 @@ import {fakeBackendProvider} from "./components/auth/auth.helper";
 import {StudentComponent} from "./components/student/student.component";
 import {StudentProfileComponent} from "./components/student/profile/student-profile.component";
 import {StudentTraningComponent} from "./components/student/training/student-traning.component";
+import {StudentDictionaryComponent} from "./components/student/dictionary/student-dictionary.component";
 
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import {StudentRoutingModule} from "./components/student/student-routing.module";
@@ -38,6 +39,8 @@ import {CKEditorComponent, CKEditorModule} from "ng2-ckeditor";
 
   //  Content Editor
     CKEditorComponent
+    StudentTraningComponent,
+    StudentDictionaryComponent
   ],
   imports: [
     BrowserModule,
