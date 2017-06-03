@@ -3,6 +3,7 @@ import {NgModule} from "@angular/core";
 import {StudentComponent} from "./student.component";
 import {StudentProfileComponent} from "./profile/student-profile.component";
 import {StudentTraningComponent} from "./training/student-traning.component";
+import {StudentDictionaryComponent} from "./dictionary/student-dictionary.component";
 /**
  * Created by LWells on 29.05.2017.
  */
@@ -20,6 +21,10 @@ const studentRoutes: Routes = [
       {
         path: 'traning',
         component: StudentTraningComponent,
+      },
+      {
+        path: 'dictionary',
+        component: StudentDictionaryComponent,
       }
     ]
   }

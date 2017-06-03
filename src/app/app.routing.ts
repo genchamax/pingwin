@@ -6,7 +6,6 @@ import {Routes, RouterModule} from '@angular/router';
 import {LoginComponent} from './components/auth/auth.component';
 import {AuthGuard} from "./components/auth/auth.guard";
 import {StudentComponent} from "./components/student/student.component";
-import {StudentProfileComponent} from "./components/student/profile/student-profile.component";
 
 const appRoutes: Routes = [
   {path: 'login', component: LoginComponent},
