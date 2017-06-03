@@ -1,0 +1,28 @@
+div.img-profile img {
+  height: 250px;
+}
+.settings-btn {
+  height: 30px;
+  width: 30px;
+}
+
+.btn-info {
+  height: 40px;
+  width: 45px;
+}
+
+.student-profile-container {
+  height: 400px;
+}
+
+.student-progres {
+  padding-right: 0px;
+  padding-left: 0px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.margin-10 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
