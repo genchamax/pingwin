@@ -1,4 +1,5 @@
 import {BrowserModule} from '@angular/platform-browser';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {NgModule} from '@angular/core';
 import {FormsModule} from '@angular/forms';
 import {BaseRequestOptions, HttpModule} from '@angular/http';
@@ -22,6 +23,8 @@ import {StudentDictionaryComponent} from "./components/student/dictionary/studen
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import {StudentRoutingModule} from "./components/student/student-routing.module";
 
+import {AccordionModule} from 'primeng/primeng';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,10 +36,12 @@ import {StudentRoutingModule} from "./components/student/student-routing.module"
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     FormsModule,
     HttpModule,
     NgbModule.forRoot(),
     StudentRoutingModule,
+    AccordionModule,
     routing
   ],
   providers: [
