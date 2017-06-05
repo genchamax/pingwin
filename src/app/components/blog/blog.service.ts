@@ -3,13 +3,20 @@
  */
 
 import {Injectable} from "@angular/core";
-import {Http} from "@angular/http";
-import {Article} from "../../models/article";
+import {Article} from "../../models/article/article";
+import {ArticlePreview} from "../../models/article/article-preview";
+
+const htmlMimeType = "text/html";
+
+const paragraphTag = "p";
+const imageTag = "img";
 
 @Injectable()
 export class BlogService {
 
-  constructor(private http: Http) {
+  private domParser = new DOMParser();
+
+  constructor() {
   }
 
   public getArticlesPage(pageNumber: number): Promise<Article[]> {
@@ -19,6 +26,20 @@ export class BlogService {
       .catch();
   }
 
+  public toArticlePreview(article: Article): ArticlePreview {
+    let articlePreview = new ArticlePreview();
+
+    articlePreview.articleId = article.id;
+    articlePreview.articleTitle = article.title;
+
+    const documentModel = this.toDocumentModel(article.text);
+
+
+    articlePreview.previewParagraph = this.getElementTextValue(this.getPreviewParagraphElement(documentModel));
+    articlePreview.previewImage = this.getElementTextValue(this.getPreviewImageElement(document));
+
+    return articlePreview;
+  }
 
   private getArticleStubPage(pageNumber: number): Promise<Article[]> {
     return Promise.resolve([
@@ -37,5 +58,29 @@ export class BlogService {
         publishDate: "27.05.2017 18:35"
       }
     ])
+  }
+
+  private toDocumentModel(stringHtml: string): Document {
+    return this.domParser.parseFromString(stringHtml, htmlMimeType);
+  }
+
+  private getPreviewParagraphElement(document: Document): HTMLElement {
+    let previewParagraph: HTMLElement = document.getElementsByTagName(paragraphTag).item(0);
+    let previewParagraphImages = previewParagraph.getElementsByTagName(imageTag);
+
+    // TODO Change it on foreach later (On for ... in element cast to string)
+    for (let i = 0; i < previewParagraphImages.length; i++) {
+      previewParagraph.removeChild(previewParagraphImages.item(i));
+    }
+
+    return previewParagraph;
+  }
+
+  private getPreviewImageElement(document: Document): HTMLElement {
+    return document.getElementsByTagName(imageTag).item(0);
+  }
+
+  private getElementTextValue(element: HTMLElement): string {
+    return element.outerHTML;
   }
 }

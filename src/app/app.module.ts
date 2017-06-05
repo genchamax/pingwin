@@ -24,7 +24,8 @@ import {StudentRoutingModule} from "./components/student/student-routing.module"
 import {BlogComponent} from "./components/blog/blog.component";
 import {CreateArticleComponent} from "./components/blog/article/create-article.component";
 import {BlogService} from "./components/blog/blog.service";
-import {CKEditorComponent, CKEditorModule} from "ng2-ckeditor";
+import {CKEditorComponent} from "ng2-ckeditor";
+import {ArticlePreviewComponent} from "./components/blog/article-preview/article-preview.component";
 
 @NgModule({
   declarations: [
@@ -36,9 +37,10 @@ import {CKEditorComponent, CKEditorModule} from "ng2-ckeditor";
 
     BlogComponent,
     CreateArticleComponent,
+    ArticlePreviewComponent,
 
   //  Content Editor
-    CKEditorComponent
+    CKEditorComponent,
     StudentTraningComponent,
     StudentDictionaryComponent
   ],

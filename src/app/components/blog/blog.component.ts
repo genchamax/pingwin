@@ -3,7 +3,8 @@
  */
 
 import {Component, OnInit} from "@angular/core";
-import {Article} from "../../models/article";
+import {Article} from "../../models/article/article";
+import {BlogService} from "./blog.service";
 
 
 @Component({
@@ -12,12 +13,16 @@ import {Article} from "../../models/article";
 })
 
 export class BlogComponent implements OnInit {
+  blogService: BlogService;
+
   articles: Article[];
   currentArticle: Article;
 
-  ngOnInit(): void {
-    //  FIXME: Add something here
-
+  constructor(blogService: BlogService) {
+    this.blogService = blogService;
   }
 
+  ngOnInit(): void {
+    this.blogService.getArticlesPage(0).then(response => this.articles = response);
+  }
 }
