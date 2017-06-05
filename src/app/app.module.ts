@@ -1,4 +1,5 @@
 import {BrowserModule} from '@angular/platform-browser';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {NgModule} from '@angular/core';
 import {FormsModule} from '@angular/forms';
 import {BaseRequestOptions, HttpModule} from '@angular/http';
@@ -27,6 +28,8 @@ import {BlogService} from "./components/blog/blog.service";
 import {CKEditorComponent} from "ng2-ckeditor";
 import {ArticlePreviewComponent} from "./components/blog/article-preview/article-preview.component";
 
+import {AccordionModule} from 'primeng/primeng';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -46,10 +49,12 @@ import {ArticlePreviewComponent} from "./components/blog/article-preview/article
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     FormsModule,
     HttpModule,
     NgbModule.forRoot(),
     StudentRoutingModule,
+    AccordionModule,
     routing
   ],
   providers: [
