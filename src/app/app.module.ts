@@ -22,6 +22,10 @@ import {StudentDictionaryComponent} from "./components/student/dictionary/studen
 
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import {StudentRoutingModule} from "./components/student/student-routing.module";
+import {BlogComponent} from "./components/blog/blog.component";
+import {CreateArticleComponent} from "./components/blog/article/create-article.component";
+import {BlogService} from "./components/blog/blog.service";
+import {CKEditorComponent, CKEditorModule} from "ng2-ckeditor";
 
 import {AccordionModule} from 'primeng/primeng';
 import {DataTableModule,SharedModule} from 'primeng/primeng';
@@ -33,7 +37,13 @@ import {DataTableModule,SharedModule} from 'primeng/primeng';
     StudentComponent,
     StudentProfileComponent,
     StudentTraningComponent,
-    StudentDictionaryComponent
+    StudentDictionaryComponent,
+
+    BlogComponent,
+    CreateArticleComponent,
+
+  //  Content Editor
+    CKEditorComponent
   ],
   imports: [
     BrowserModule,
@@ -52,6 +62,7 @@ import {DataTableModule,SharedModule} from 'primeng/primeng';
     AuthenticationService,
     UserService,
 
+    BlogService,
     // providers used to create fake backend
     fakeBackendProvider,
     MockBackend,
