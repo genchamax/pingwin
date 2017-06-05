@@ -26,6 +26,7 @@ import {BlogComponent} from "./components/blog/blog.component";
 import {CreateArticleComponent} from "./components/blog/article/create-article.component";
 import {BlogService} from "./components/blog/blog.service";
 import {CKEditorModule} from "ng2-ckeditor";
+import {ArticlePreviewComponent} from "./components/blog/article-preview/article-preview.component";
 
 import {AccordionModule} from 'primeng/primeng';
 import {DataTableModule,SharedModule} from 'primeng/primeng';
@@ -41,6 +42,7 @@ import {DataTableModule,SharedModule} from 'primeng/primeng';
 
     BlogComponent,
     CreateArticleComponent,
+    ArticlePreviewComponent,
 
   //  Content Editor
 /*    CKEditorComponent*/
