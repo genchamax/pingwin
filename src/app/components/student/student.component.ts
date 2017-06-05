@@ -3,7 +3,7 @@
  */
 import { Component, OnInit } from '@angular/core';
 
-import { User } from '../../models/index';
+import { User } from '../../domain/index';
 import { UserService } from '../user/user.service';
 
 @Component({

@@ -25,10 +25,12 @@ import {StudentRoutingModule} from "./components/student/student-routing.module"
 import {BlogComponent} from "./components/blog/blog.component";
 import {CreateArticleComponent} from "./components/blog/article/create-article.component";
 import {BlogService} from "./components/blog/blog.service";
+import {CKEditorModule} from "ng2-ckeditor";
 import {CKEditorComponent} from "ng2-ckeditor";
 import {ArticlePreviewComponent} from "./components/blog/article-preview/article-preview.component";
 
 import {AccordionModule} from 'primeng/primeng';
+import {DataTableModule,SharedModule} from 'primeng/primeng';
 
 @NgModule({
   declarations: [
@@ -37,13 +39,15 @@ import {AccordionModule} from 'primeng/primeng';
     StudentComponent,
     StudentProfileComponent,
     StudentTraningComponent,
+    StudentDictionaryComponent,
+    StudentProfileComponent,
+    StudentTraningComponent,
 
     BlogComponent,
     CreateArticleComponent,
     ArticlePreviewComponent,
 
   //  Content Editor
-    CKEditorComponent,
     StudentTraningComponent,
     StudentDictionaryComponent
   ],
@@ -55,6 +59,9 @@ import {AccordionModule} from 'primeng/primeng';
     NgbModule.forRoot(),
     StudentRoutingModule,
     AccordionModule,
+    DataTableModule,
+    SharedModule,
+    CKEditorModule,
     routing
   ],
   providers: [
