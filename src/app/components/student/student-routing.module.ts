@@ -8,7 +8,8 @@ import {StudentDictionaryComponent} from "./dictionary/student-dictionary.compon
  * Created by LWells on 29.05.2017.
  */
 
-import {AccordionModule} from 'primeng/primeng';
+import {AccordionModule, DataTableModule, DropdownModule, SliderModule } from 'primeng/primeng';
+import {CarService} from "./dictionary/student-dictionary.service";
 
 const studentRoutes: Routes = [
   {
@@ -35,10 +36,16 @@ const studentRoutes: Routes = [
 @NgModule({
   imports: [
     RouterModule.forChild(studentRoutes),
-    AccordionModule
+    AccordionModule,
+    DataTableModule,
+    DropdownModule,
+    SliderModule
   ],
   exports: [
     RouterModule
+  ],
+  providers: [
+    CarService
   ]
 })
 export class StudentRoutingModule {

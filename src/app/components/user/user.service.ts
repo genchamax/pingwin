@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 import 'rxjs/add/operator/map'
 
 import { AuthenticationService } from 'app/components/auth/auth.service';
-import { User } from 'app/models/index';
+import { User } from 'app/domain/index';
 
 @Injectable()
 export class UserService {

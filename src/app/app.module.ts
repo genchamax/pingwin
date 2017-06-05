@@ -24,6 +24,7 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import {StudentRoutingModule} from "./components/student/student-routing.module";
 
 import {AccordionModule} from 'primeng/primeng';
+import {DataTableModule,SharedModule} from 'primeng/primeng';
 
 @NgModule({
   declarations: [
@@ -42,6 +43,8 @@ import {AccordionModule} from 'primeng/primeng';
     NgbModule.forRoot(),
     StudentRoutingModule,
     AccordionModule,
+    DataTableModule,
+    SharedModule,
     routing
   ],
   providers: [
