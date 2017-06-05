@@ -3,8 +3,8 @@
  */
 
 import {Injectable} from "@angular/core";
-import {Article} from "../../models/article/article";
-import {ArticlePreview} from "../../models/article/article-preview";
+import {ArticlePreview} from "../../domain/article/article-preview";
+import {Article} from "../../domain/article/article";
 
 const htmlMimeType = "text/html";
 

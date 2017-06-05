@@ -2,9 +2,9 @@
  * Created by Max on 04.06.2017.
  */
 import {Component, Input, OnInit} from "@angular/core";
-import {Article} from "../../../models/article/article";
 import {BlogService} from "../blog.service";
-import {ArticlePreview} from "../../../models/article/article-preview";
+import {Article} from "../../../domain/article/article";
+import {ArticlePreview} from "../../../domain/article/article-preview";
 
 @Component({
   moduleId: module.id,

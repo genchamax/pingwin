@@ -3,8 +3,8 @@
  */
 
 import {Component, OnInit} from "@angular/core";
-import {Article} from "../../models/article/article";
 import {BlogService} from "./blog.service";
+import {Article} from "../../domain/article/article";
 
 
 @Component({
