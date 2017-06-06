@@ -15,6 +15,7 @@ const appRoutes: Routes = [
     path: 'student', component: StudentComponent,
   },
   {path: 'blog', component: BlogComponent},
+  {path: 'blog/article/:articleId', component: CreateArticleComponent},
   {path: 'blog/create', component: CreateArticleComponent},
   {path: '**', redirectTo: 'student'}
 ];

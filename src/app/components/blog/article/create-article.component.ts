@@ -1,7 +1,7 @@
 /**
  * Created by Max on 29.05.2017.
  */
-import {Component, OnInit} from "@angular/core";
+import {Component} from "@angular/core";
 import {Article} from "../../../domain/article/article";
 
 @Component({
@@ -10,12 +10,8 @@ import {Article} from "../../../domain/article/article";
   styleUrls: ["./create-article.component.css"]
 })
 
-export class CreateArticleComponent implements OnInit {
+//TODO Change component name to ArticleComponent
+export class CreateArticleComponent {
   article: Article = new Article;
 
-  ngOnInit(): void {
-    //FIXME: Write code here
-  }
-
-//  TODO Write method that replace double quotes to single qoutes
 }

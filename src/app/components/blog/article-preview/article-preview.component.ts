@@ -24,5 +24,7 @@ export class ArticlePreviewComponent implements OnInit {
 
   ngOnInit(): void {
     this.articlePreview = this.blogService.toArticlePreview(this.article);
+    // console.log(this.article);
+    // console.log(this.articlePreview);
   }
 }

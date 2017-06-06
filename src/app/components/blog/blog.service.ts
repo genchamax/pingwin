@@ -11,6 +11,8 @@ const htmlMimeType = "text/html";
 const paragraphTag = "p";
 const imageTag = "img";
 
+const styleAttribute = "style";
+
 @Injectable()
 export class BlogService {
 
@@ -32,11 +34,10 @@ export class BlogService {
     articlePreview.articleId = article.id;
     articlePreview.articleTitle = article.title;
 
-    const documentModel = this.toDocumentModel(article.text);
-
-
-    articlePreview.previewParagraph = this.getElementTextValue(this.getPreviewParagraphElement(documentModel));
-    articlePreview.previewImage = this.getElementTextValue(this.getPreviewImageElement(document));
+    articlePreview.previewParagraph = this.getElementTextValue(this.getPreviewParagraphElement(
+      this.toDocumentModel(article.text)));
+    articlePreview.previewImage = this.getElementTextValue(
+      this.getPreviewImageElementWithoutStyleAttribute(this.getPreviewImageElement(this.toDocumentModel(article.text))));
 
     return articlePreview;
   }
@@ -77,7 +78,13 @@ export class BlogService {
   }
 
   private getPreviewImageElement(document: Document): HTMLElement {
+    console.log(document);
     return document.getElementsByTagName(imageTag).item(0);
+  }
+
+  private getPreviewImageElementWithoutStyleAttribute(imageElement: HTMLElement): HTMLElement {
+    imageElement.removeAttribute(styleAttribute);
+    return imageElement;
   }
 
   private getElementTextValue(element: HTMLElement): string {
