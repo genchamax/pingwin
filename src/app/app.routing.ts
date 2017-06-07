@@ -15,7 +15,8 @@ const appRoutes: Routes = [
     path: 'student', component: StudentComponent,
   },
   {path: 'blog', component: BlogComponent},
-  {path: 'blog/article/:articleId', component: CreateArticleComponent},
+  //FIXME Change into blog/article/:articleId
+  {path: 'blog/article/1', component: CreateArticleComponent},
   {path: 'blog/create', component: CreateArticleComponent},
   {path: '**', redirectTo: 'student'}
 ];
