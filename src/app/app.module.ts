@@ -9,11 +9,10 @@ import {routing} from "./app.routing";
 
 import {LoginComponent} from "./components/auth/auth.component";
 /*import {AuthGuard} from './components/auth/auth.guard';
-import {AuthenticationService} from "./components/auth/auth.service";
-import {UserService} from "./components/user/user.service";
-import {MockBackend} from "@angular/http/testing";
-import {fakeBackendProvider} from "./components/auth/auth.helper";*/
-
+ import {AuthenticationService} from "./components/auth/auth.service";
+ import {UserService} from "./components/user/user.service";
+ import {MockBackend} from "@angular/http/testing";
+ import {fakeBackendProvider} from "./components/auth/auth.helper";*/
 /*Student*/
 import {StudentComponent} from "./components/student/student.component";
 import {StudentProfileComponent} from "./components/student/profile/student-profile.component";
@@ -32,6 +31,11 @@ import {AccordionModule, DataTableModule, SharedModule} from "primeng/primeng";
 import {CarService} from "./components/student/dictionary/student-dictionary.service";
 import {TeacherComponent} from "./components/teacher/teacher.component";
 import {TeacherService} from "./components/teacher/teacher.service";
+import {TeacherRoutingModule} from "./components/teacher/teacher-routing.module";
+import {WordComponent} from "./components/word/word.component";
+import {LessonComponent} from "./components/lesson/lesson.component";
+import {TopicComponent} from "./components/topic/topic.component";
+import {TopicOverviewComponent} from "./components/teacher/topic-overview/topic-overview.component";
 
 @NgModule({
   declarations: [
@@ -45,10 +49,13 @@ import {TeacherService} from "./components/teacher/teacher.service";
     BlogComponent,
     CreateArticleComponent,
     ArticlePreviewComponent,
-    TeacherComponent
 
-  //  Content Editor
-/*    CKEditorComponent*/
+    TeacherComponent,
+    TopicOverviewComponent,
+    WordComponent,
+    LessonComponent,
+    TopicComponent
+
   ],
   imports: [
     BrowserModule,
@@ -56,7 +63,10 @@ import {TeacherService} from "./components/teacher/teacher.service";
     FormsModule,
     HttpModule,
     NgbModule.forRoot(),
+
     StudentRoutingModule,
+    TeacherRoutingModule,
+
     AccordionModule,
     DataTableModule,
     SharedModule,

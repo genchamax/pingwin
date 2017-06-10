@@ -1,0 +1,55 @@
+.content {
+  padding-top: 56px;
+}
+.login {
+  padding-top: 40px;
+}
+
+.main-page-content {
+  padding-top: 90px;
+  font-family:'CaviarDreams';
+}
+
+.card {
+  background-color: transparent;
+}
+
+.card-block {
+  border-radius: 0 6px 6px 0;
+  background-color: #f3fafe;
+  height: 900px;
+}
+
+.list-group {
+  padding-right: 0px;
+  border-radius: 6px 0 0 6px;
+  background-color: #cfebfd;
+}
+
+a.list-group-item {
+  border: 0px;
+  background-color: #cfebfd;
+  color: #494949;
+}
+a.list-group-item:hover,
+a.list-group-item:focus {
+  background-color: #f3fafe;
+}
+
+a.list-group-item.active,
+a.list-group-item.active:hover,
+a.list-group-item.active:focus {
+  color: #FFF;
+  background-color: #f3fafe;
+  border: none;
+}
+
+.list-group-item:first-child {
+  border-radius: 6px 0 0;
+}
+
+.content-container {
+  height: 900px;
+  border-radius: 6px;
+  border-color: transparent;
+}
