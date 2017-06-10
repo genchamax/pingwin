@@ -32,9 +32,9 @@ import {CarService} from "./components/student/dictionary/student-dictionary.ser
 import {TeacherComponent} from "./components/teacher/teacher.component";
 import {TeacherService} from "./components/teacher/teacher.service";
 import {TeacherRoutingModule} from "./components/teacher/teacher-routing.module";
-import {WordComponent} from "./components/word/word.component";
-import {LessonComponent} from "./components/lesson/lesson.component";
-import {TopicComponent} from "./components/topic/topic.component";
+import {WordComponent} from "./components/teacher/word/word.component";
+import {LessonComponent} from "./components/teacher/lesson/lesson.component";
+import {TopicComponent} from "./components/teacher/topic/topic.component";
 import {TopicOverviewComponent} from "./components/teacher/topic-overview/topic-overview.component";
 
 @NgModule({
