@@ -1,51 +1,90 @@
 {
-  "data": [
+  "topics": [
     {
       "id": 1,
-      "name": "Абетка",
+      "name": "Тварини",
       "order": 3,
       "lessons": [
         {
+          "id": 1,
+          "name": "Пінгвіни",
+          "order": 1,
+          "author": {
+            "lastName": "Петренко",
+            "firstName": "Петро"
+          },
+          "picture": {
+            "id": 1,
+            "sourcePath": "/assets/img/penguin/penguins.jpg",
+            "mediaType": {},
+            "author": {}
+          },
           "words": [
             {
-
+              "id": 1,
+              "name": "Шкіпер",
+              "media": {},
+              "picture": {
+                "id": 2,
+                "sourcePath": "/assets/img/penguin/skipper.png",
+                "mediaType": {},
+                "author": {}
+              },
+              "author": {}
+            },
+            {
+              "id": 2,
+              "name": "Рядовий",
+              "media": {},
+              "picture": {
+                "id": 3,
+                "sourcePath": "/assets/img/penguin/private.jpg",
+                "mediaType": {},
+                "author": {}
+              },
+              "author": {}
             }
           ]
         },
         {
-
+          "id": 2,
+          "name": "Інші пінгвіни",
+          "order": 2,
+          "author": {},
+          "picture": {
+            "id": 4,
+            "sourcePath": "/assets/img/penguin/penguins.jpg",
+            "mediaType": {},
+            "author": {}
+          },
+          "words": [
+            {
+              "id": 1,
+              "name": "Ковальські",
+              "media": {},
+              "picture": {
+                "id": 5,
+                "sourcePath": "/assets/img/penguin/kowalski.png",
+                "mediaType": {},
+                "author": {}
+              },
+              "author": {}
+            },
+            {
+              "id": 2,
+              "name": "Ріко",
+              "media": {},
+              "picture": {
+                "id": 6,
+                "sourcePath": "/assets/img/penguin/rico.png",
+                "mediaType": {},
+                "author": {}
+              },
+              "author": {}
+            }
+          ]
         }
       ]
-    },
-    {
-      "id": 2,
-      "name": "Тварини",
-      "order": 2
-    },
-    {
-      "id": 3,
-      "name": "Рослини",
-      "order": 1
-    },
-    {
-      "id": 4,
-      "name": "",
-      "order": 4
-    },
-    {
-      "id": 5,
-      "name": "",
-      "order": 6
-    },
-    {
-      "id": 6,
-      "name": "",
-      "order": 5
-    },
-    {
-      "id": 7,
-      "name": "",
-      "order": 7
     }
   ]
 }
