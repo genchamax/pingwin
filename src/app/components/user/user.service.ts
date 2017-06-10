@@ -1,6 +1,6 @@
 /**
  * Created by LWells on 04.05.2017.
- */
+ *//*
 import { Injectable } from '@angular/core';
 import { Http, Headers, RequestOptions, Response } from '@angular/http';
 import { Observable } from 'rxjs';
@@ -26,3 +26,4 @@ export class UserService {
       .map((response: Response) => response.json());
   }
 }
+*/

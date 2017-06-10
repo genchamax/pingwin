@@ -1,6 +1,7 @@
-/**
+/*
+/!**
  * Created by LWells on 04.05.2017.
- */
+ *!/
 import { Http, BaseRequestOptions, Response, ResponseOptions, RequestMethod } from '@angular/http';
 import { MockBackend, MockConnection } from '@angular/http/testing';
 
@@ -58,3 +59,4 @@ export let fakeBackendProvider = {
   useFactory: fakeBackendFactory,
   deps: [MockBackend, BaseRequestOptions]
 };
+*/

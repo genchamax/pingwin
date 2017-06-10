@@ -1,6 +1,7 @@
 {
   "data":[
-    {"vin":"a1653d4d","year":1998, "brand":"VW","color":"White"}
+    {"vin":"a1653d4d","year":1998, "brand":"VW","color":"White"},
+    {"vin":"a1653d4w","year":1999, "brand":"VV","color":"White"}
 /*    {"vin":"ddeb9b10","brand":"Mercedes","year":1985,"color":"Green"},
     {"vin":"d8ebe413","brand":"Jaguar","year":1979,"color":"Silver"},
     {"vin":"aab227b7","brand":"Audi","year":1970,"color":"Black"}*/

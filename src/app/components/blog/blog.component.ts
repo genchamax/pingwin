@@ -3,7 +3,7 @@
  */
 
 import {Component, OnInit} from "@angular/core";
-import {Article} from "../../models/article/article";
+import {Article} from "../../domain/article/article";
 import {BlogService} from "./blog.service";
 
 

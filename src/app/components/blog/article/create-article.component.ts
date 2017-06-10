@@ -2,7 +2,7 @@
  * Created by Max on 29.05.2017.
  */
 import {Component, OnInit} from "@angular/core";
-import {Article} from "../../../models/article/article";
+import {Article} from "../../../domain/article/article";
 
 @Component({
   moduleId: module.id,

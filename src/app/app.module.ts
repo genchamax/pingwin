@@ -7,12 +7,12 @@ import {BaseRequestOptions, HttpModule} from '@angular/http';
 import {AppComponent} from './app.component';
 import {routing} from './app.routing';
 
-import {AuthGuard} from './components/auth/auth.guard';
 import {LoginComponent} from "./components/auth/auth.component";
+/*import {AuthGuard} from './components/auth/auth.guard';
 import {AuthenticationService} from "./components/auth/auth.service";
 import {UserService} from "./components/user/user.service";
 import {MockBackend} from "@angular/http/testing";
-import {fakeBackendProvider} from "./components/auth/auth.helper";
+import {fakeBackendProvider} from "./components/auth/auth.helper";*/
 
 /*Student*/
 import {StudentComponent} from "./components/student/student.component";
@@ -30,6 +30,7 @@ import {ArticlePreviewComponent} from "./components/blog/article-preview/article
 
 import {AccordionModule} from 'primeng/primeng';
 import {DataTableModule,SharedModule} from 'primeng/primeng';
+import {CarService} from "./components/student/dictionary/student-dictionary.service";
 
 @NgModule({
   declarations: [
@@ -61,14 +62,14 @@ import {DataTableModule,SharedModule} from 'primeng/primeng';
     routing
   ],
   providers: [
-    AuthGuard,
-    AuthenticationService,
-    UserService,
-
+    //AuthGuard,
+    //AuthenticationService,
+    //UserService,
+    CarService,
     BlogService,
     // providers used to create fake backend
-    fakeBackendProvider,
-    MockBackend,
+    //fakeBackendProvider,
+    //MockBackend,
     BaseRequestOptions
   ],
   bootstrap: [AppComponent]

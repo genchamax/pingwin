@@ -10,6 +10,8 @@ import {StudentDictionaryComponent} from "./dictionary/student-dictionary.compon
 
 import {AccordionModule, DataTableModule, DropdownModule, SliderModule } from 'primeng/primeng';
 import {CarService} from "./dictionary/student-dictionary.service";
+import {HttpModule} from "@angular/http";
+import {BrowserModule} from "@angular/platform-browser";
 
 const studentRoutes: Routes = [
   {
@@ -39,7 +41,7 @@ const studentRoutes: Routes = [
     AccordionModule,
     DataTableModule,
     DropdownModule,
-    SliderModule
+    SliderModule,
   ],
   exports: [
     RouterModule

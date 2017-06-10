@@ -1,6 +1,6 @@
 /**
  * Created by LWells on 04.05.2017.
- */
+ *//*
 import { Injectable } from '@angular/core';
 import { Http, Headers, Response } from '@angular/http';
 import { Observable } from 'rxjs';
@@ -43,3 +43,4 @@ export class AuthenticationService {
     localStorage.removeItem('currentUser');
   }
 }
+*/

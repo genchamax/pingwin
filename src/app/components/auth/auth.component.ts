@@ -4,7 +4,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
-import { AuthenticationService } from './auth.service';
+/*import { AuthenticationService } from './auth.service';*/
 
 @Component({
   moduleId: module.id,
@@ -19,15 +19,15 @@ export class LoginComponent implements OnInit {
 
   constructor(
     private router: Router,
-    private authenticationService: AuthenticationService) { }
+/*    private authenticationService: AuthenticationService*/) { }
 
   ngOnInit() {
     // reset auth status
-    this.authenticationService.logout();
+/*    this.authenticationService.logout();*/
   }
 
   login() {
-    this.loading = true;
+/*    this.loading = true;
     this.authenticationService.login(this.model.username, this.model.password)
       .subscribe(result => {
         if (result === true) {
@@ -38,6 +38,6 @@ export class LoginComponent implements OnInit {
           this.error = 'Username or password is incorrect';
           this.loading = false;
         }
-      });
+      });*/
   }
 }

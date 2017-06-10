@@ -2,7 +2,6 @@
  * Created by LWells on 5/30/2017.
  */
 import {Component, OnInit} from '@angular/core';
-import {SelectItem} from "primeng/primeng";
 import {Car} from "../../../domain/car";
 import {CarService} from "./student-dictionary.service";
 
@@ -13,16 +12,21 @@ import {CarService} from "./student-dictionary.service";
 })
 
 export class StudentDictionaryComponent implements OnInit {
-  cars: Car[] = [];
+  cars: Car[];
 
-  brands: SelectItem[];
-
-  colors: SelectItem[];
-
-  constructor(private carService: CarService) {}
+  constructor(private carService: CarService) {
+  }
 
   ngOnInit() {
-    this.carService.getCarsMedium().then(cars => this.cars = cars);
+    this.carService.getCarsMedium().subscribe(cars => {
+      console.log(cars);
+      this.cars = cars
+    });
+    console.log("call2");
+    /*    this.carService.getCarsMedium().then(function (cars) {
+     cars => this.cars = cars;
+     console.log(cars)
+     });*/
   }
 }
 
