@@ -1,11 +1,11 @@
-import {BrowserModule} from '@angular/platform-browser';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {NgModule} from '@angular/core';
-import {FormsModule} from '@angular/forms';
-import {BaseRequestOptions, HttpModule} from '@angular/http';
+import {BrowserModule} from "@angular/platform-browser";
+import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
+import {NgModule} from "@angular/core";
+import {FormsModule} from "@angular/forms";
+import {BaseRequestOptions, HttpModule} from "@angular/http";
 
-import {AppComponent} from './app.component';
-import {routing} from './app.routing';
+import {AppComponent} from "./app.component";
+import {routing} from "./app.routing";
 
 import {LoginComponent} from "./components/auth/auth.component";
 /*import {AuthGuard} from './components/auth/auth.guard';
@@ -20,7 +20,7 @@ import {StudentProfileComponent} from "./components/student/profile/student-prof
 import {StudentTraningComponent} from "./components/student/training/student-traning.component";
 import {StudentDictionaryComponent} from "./components/student/dictionary/student-dictionary.component";
 
-import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import {NgbModule} from "@ng-bootstrap/ng-bootstrap";
 import {StudentRoutingModule} from "./components/student/student-routing.module";
 import {BlogComponent} from "./components/blog/blog.component";
 import {CreateArticleComponent} from "./components/blog/article/create-article.component";
@@ -28,9 +28,10 @@ import {BlogService} from "./components/blog/blog.service";
 import {CKEditorModule} from "ng2-ckeditor";
 import {ArticlePreviewComponent} from "./components/blog/article-preview/article-preview.component";
 
-import {AccordionModule} from 'primeng/primeng';
-import {DataTableModule,SharedModule} from 'primeng/primeng';
+import {AccordionModule, DataTableModule, SharedModule} from "primeng/primeng";
 import {CarService} from "./components/student/dictionary/student-dictionary.service";
+import {TeacherComponent} from "./components/teacher/teacher.component";
+import {TeacherService} from "./components/teacher/teacher.service";
 
 @NgModule({
   declarations: [
@@ -44,6 +45,7 @@ import {CarService} from "./components/student/dictionary/student-dictionary.ser
     BlogComponent,
     CreateArticleComponent,
     ArticlePreviewComponent,
+    TeacherComponent
 
   //  Content Editor
 /*    CKEditorComponent*/
@@ -70,7 +72,8 @@ import {CarService} from "./components/student/dictionary/student-dictionary.ser
     // providers used to create fake backend
     //fakeBackendProvider,
     //MockBackend,
-    BaseRequestOptions
+    BaseRequestOptions,
+    TeacherService
   ],
   bootstrap: [AppComponent]
 })
