@@ -1,10 +1,37 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+<div class="lesson-container">
+  <div class="container">
+
+    <div class="lesson-info-container row">
+      <div class="col-md-4">
+        <div class="row">
+          <div class="lesson-name-container col-md-12">
+            Тема уроку: <b>{{lesson.name}}</b>
+          </div>
+          <div class="lesson-author-description col-md-12">
+            Автор: <b>{{lesson.author.firstName}} {{lesson.author.lastName}}</b>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-8">
+        <div class="row">
+          <div class="col-md-12 lesson-image-container">
+            <img [src]="lesson.picture.sourcePath">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <p-accordion>
+      <p-accordionTab header="Слова, що входять до уроку">
+        <div class="lesson-words-container">
+          <div class="row">
+            <div *ngFor="let word of lesson.words" class="col-md-3">
+              <pingwin-word [word]="word"></pingwin-word>
+            </div>
+          </div>
+        </div>
+      </p-accordionTab>
+    </p-accordion>
+  </div>
+</div>
