@@ -1,0 +1,12 @@
+<div class="topic-container">
+  <div *ngFor="let lesson of topic.lessons">
+    <p-accordion>
+      <p-accordionTab>
+        <p-header>
+          {{lesson.name}}
+        </p-header>
+        <pingwin-lesson [lesson]="lesson"></pingwin-lesson>
+      </p-accordionTab>
+    </p-accordion>
+  </div>
+</div>
