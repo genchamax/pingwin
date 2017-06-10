@@ -13,8 +13,38 @@
       <li class="nav-item"><a class="nav-link" routerLink="courses">Відео</a></li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
-      <button class="btn btn-primary my-2 my-sm-0 accent-btn" type="button">Реєстрація</button>
+      <button class="btn btn-primary my-2 my-sm-0 accent-btn" type="button" (click)="open(content)">Реєстрація</button>
     </form>
   </div>
 </nav>
 <router-outlet></router-outlet>
+
+<ng-template #content let-c="close" let-d="dismiss">
+  <div class="modal-header">
+    <h4 class="modal-title">Реєстрація</h4>
+    <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <section class="section section&#45;&#45;steps login">
+      <form name="form">
+        <div class="form-group">
+          <label>Пошта</label>
+          <input class="form-control">
+        </div>
+        <div class="form-group">
+          <label>Пароль</label>
+          <input type="password" class="form-control">
+        </div>
+        <div class="form-group">
+          <label>Повторити пароль</label>
+          <input type="password" class="form-control">
+        </div>
+        <div class="form-group">
+          <button class="btn btn-primary accent-btn">Зареєструватися</button>
+        </div>
+      </form>
+    </section>
+  </div>
+</ng-template>
