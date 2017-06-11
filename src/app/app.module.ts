@@ -97,7 +97,7 @@ import {TooltipModule} from "ngx-bootstrap";
     //fakeBackendProvider,
     //MockBackend,
     BaseRequestOptions,
-    ConfirmationService
+    ConfirmationService,
     // ConfirmationService
 
     TeacherService,
