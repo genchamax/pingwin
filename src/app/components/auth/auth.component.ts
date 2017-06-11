@@ -35,7 +35,7 @@ export class LoginComponent implements OnInit {
           this.router.navigate(['/']);
         } else {
           // auth failed
-          this.error = 'Username or password is incorrect';
+          this.error = 'Електрона пошта або пароль введені невірно';
           this.loading = false;
         }
       });*/

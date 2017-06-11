@@ -1,0 +1,38 @@
+.lesson-name {
+  width: 50%;
+  margin: 0 auto;
+}
+.lesson-name-text {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+.lesson-card-group {
+  width: 60%;
+  margin: 0 auto;
+}
+.lesson-card {
+  height: 150px;
+  width: 120px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.lesson-img {
+  height: 100px;
+  width: 100px;
+}
+
+.lesson-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
+}
+
+.lesson-text {
+  width: 100px;
+}

@@ -3,7 +3,7 @@
  */
 
 import {Component, Input} from "@angular/core";
-import {Topic} from "../../domain/topic";
+import {Topic} from "../../../domain/topic";
 @Component({
   moduleId: module.id,
   selector: 'pingwin-topic',

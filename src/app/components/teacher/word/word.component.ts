@@ -3,7 +3,7 @@
  */
 
 import {Component, Input} from "@angular/core";
-import {Word} from "../../domain/word";
+import {Word} from "../../../domain/word";
 
 @Component({
   moduleId: module.id,
