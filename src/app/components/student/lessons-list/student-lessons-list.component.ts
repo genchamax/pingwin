@@ -1,7 +1,9 @@
 /**
  * Created by LWells on 29.05.2017.
  */
-import {Component} from '@angular/core';
+import {Component, Input} from '@angular/core';
+import {Topic} from "../../../domain/topic";
+import {StudentLessonsListService} from "../student-lessons-list.service";
 
 @Component({
   moduleId: module.id,
@@ -10,4 +12,15 @@ import {Component} from '@angular/core';
 })
 
 export class StudentLessonsListComponent {
+
+  topics: Topic[];
+
+  constructor(private studentLessonsListService: StudentLessonsListService) {
+  }
+
+  ngOnInit(): void {
+    this.studentLessonsListService.getTopics().subscribe(topics => {
+      this.topics = topics;
+    });
+  }
 }

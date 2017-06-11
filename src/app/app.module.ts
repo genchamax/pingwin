@@ -31,6 +31,7 @@ import {LessonComponent} from "./components/teacher/lesson/lesson.component";
 import {TopicComponent} from "./components/teacher/topic/topic.component";
 import {TopicOverviewComponent} from "./components/teacher/topic-overview/topic-overview.component";
 import {StudentLessonsListComponent} from "./components/student/lessons-list/student-lessons-list.component";
+import {StudentLessonsListService} from "./components/student/student-lessons-list.service";
 
 /*import {AuthGuard} from './components/auth/auth.guard';
  import {AuthenticationService} from "./components/auth/auth.service";
@@ -86,7 +87,8 @@ import {StudentLessonsListComponent} from "./components/student/lessons-list/stu
     //fakeBackendProvider,
     //MockBackend,
     BaseRequestOptions,
-    TeacherService
+    TeacherService,
+    StudentLessonsListService
   ],
   bootstrap: [AppComponent]
 })

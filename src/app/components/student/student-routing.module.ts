@@ -10,6 +10,7 @@ import {StudentDictionaryComponent} from "./dictionary/student-dictionary.compon
 import {AccordionModule, DataTableModule, DropdownModule, SliderModule } from 'primeng/primeng';
 import {CarService} from "./dictionary/student-dictionary.service";
 import {StudentLessonsListComponent} from "./lessons-list/student-lessons-list.component";
+import {StudentLessonsListService} from "./student-lessons-list.service";
 
 const studentRoutes: Routes = [
   {
@@ -50,7 +51,8 @@ const studentRoutes: Routes = [
     RouterModule
   ],
   providers: [
-    CarService
+    CarService,
+    StudentLessonsListService
   ]
 })
 export class StudentRoutingModule {
