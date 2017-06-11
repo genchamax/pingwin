@@ -8,12 +8,6 @@ import {AppComponent} from "./app.component";
 import {routing} from "./app.routing";
 
 import {LoginComponent} from "./components/auth/auth.component";
-/*import {AuthGuard} from './components/auth/auth.guard';
- import {AuthenticationService} from "./components/auth/auth.service";
- import {UserService} from "./components/user/user.service";
- import {MockBackend} from "@angular/http/testing";
- import {fakeBackendProvider} from "./components/auth/auth.helper";*/
-/*Student*/
 import {StudentComponent} from "./components/student/student.component";
 import {StudentProfileComponent} from "./components/student/profile/student-profile.component";
 import {StudentTraningComponent} from "./components/student/training/student-traning.component";
@@ -41,6 +35,15 @@ import {WordComponent} from "./components/teacher/word/word.component";
 import {LessonComponent} from "./components/teacher/lesson/lesson.component";
 import {TopicComponent} from "./components/teacher/topic/topic.component";
 import {TopicOverviewComponent} from "./components/teacher/topic-overview/topic-overview.component";
+import {StudentLessonsListComponent} from "./components/student/lessons-list/student-lessons-list.component";
+import {StudentLessonsListService} from "./components/student/student-lessons-list.service";
+
+/*import {AuthGuard} from './components/auth/auth.guard';
+ import {AuthenticationService} from "./components/auth/auth.service";
+ import {UserService} from "./components/user/user.service";
+ import {MockBackend} from "@angular/http/testing";
+ import {fakeBackendProvider} from "./components/auth/auth.helper";*/
+/*Student*/
 import {TooltipModule} from "ngx-bootstrap";
 
 @NgModule({
@@ -51,6 +54,7 @@ import {TooltipModule} from "ngx-bootstrap";
     StudentProfileComponent,
     StudentTraningComponent,
     StudentDictionaryComponent,
+    StudentLessonsListComponent,
 
     BlogComponent,
     CreateArticleComponent,
@@ -96,6 +100,8 @@ import {TooltipModule} from "ngx-bootstrap";
     ConfirmationService
     // ConfirmationService
 
+    TeacherService,
+    StudentLessonsListService
   ],
   bootstrap: [AppComponent]
 })

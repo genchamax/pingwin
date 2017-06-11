@@ -2,12 +2,12 @@
   "topics": [
     {
       "id": 1,
-      "name": "Тварини",
-      "order": 3,
+      "name": "Мова",
+      "order": 1,
       "lessons": [
         {
           "id": 1,
-          "name": "Пінгвіни",
+          "name": "Абетка",
           "order": 1,
           "author": {
             "lastName": "Петренко",
@@ -15,7 +15,171 @@
           },
           "picture": {
             "id": 1,
-            "sourcePath": "/assets/img/penguin/penguins.jpg",
+            "sourcePath": "/assets/img/article/language/alphabet/alphabet.jpg",
+            "mediaType": {},
+            "author": {}
+          },
+          "words": [
+            {
+              "id": 1,
+              "name": "Шкіпер",
+              "media": {},
+              "picture": {
+                "id": 2,
+                "sourcePath": "/assets/img/penguin/skipper.png",
+                "mediaType": {},
+                "author": {}
+              },
+              "author": {}
+            },
+            {
+              "id": 2,
+              "name": "Рядовий",
+              "media": {},
+              "picture": {
+                "id": 3,
+                "sourcePath": "/assets/img/penguin/private.jpg",
+                "mediaType": {},
+                "author": {}
+              },
+              "author": {}
+            }
+          ],
+          "point":0
+        },
+        {
+          "id": 2,
+          "name": "Говоріння",
+          "order": 2,
+          "author": {},
+          "picture": {
+            "id": 2,
+            "sourcePath": "/assets/img/article/language/talking/talking.jpg",
+            "mediaType": {},
+            "author": {}
+          },
+          "words": [
+            {
+              "id": 1,
+              "name": "Ковальські",
+              "media": {},
+              "picture": {
+                "id": 5,
+                "sourcePath": "/assets/img/penguin/kowalski.png",
+                "mediaType": {},
+                "author": {}
+              },
+              "author": {}
+            },
+            {
+              "id": 2,
+              "name": "Ріко",
+              "media": {},
+              "picture": {
+                "id": 6,
+                "sourcePath": "/assets/img/penguin/rico.png",
+                "mediaType": {},
+                "author": {}
+              },
+              "author": {}
+            }
+          ],
+          "point":0
+        },
+        {
+          "id": 3,
+          "name": "Письмо",
+          "order": 3,
+          "author": {},
+          "picture": {
+            "id": 3,
+            "sourcePath": "/assets/img/article/language/write/write.jpg",
+            "mediaType": {},
+            "author": {}
+          },
+          "words": [
+            {
+              "id": 1,
+              "name": "Ковальські",
+              "media": {},
+              "picture": {
+                "id": 5,
+                "sourcePath": "/assets/img/penguin/kowalski.png",
+                "mediaType": {},
+                "author": {}
+              },
+              "author": {}
+            },
+            {
+              "id": 2,
+              "name": "Ріко",
+              "media": {},
+              "picture": {
+                "id": 6,
+                "sourcePath": "/assets/img/penguin/rico.png",
+                "mediaType": {},
+                "author": {}
+              },
+              "author": {}
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "name": "Мова",
+          "order": 4,
+          "author": {},
+          "picture": {
+            "id": 4,
+            "sourcePath": "/assets/img/article/language/language/language.jpg",
+            "mediaType": {},
+            "author": {}
+          },
+          "words": [
+            {
+              "id": 1,
+              "name": "Ковальські",
+              "media": {},
+              "picture": {
+                "id": 5,
+                "sourcePath": "/assets/img/penguin/kowalski.png",
+                "mediaType": {},
+                "author": {}
+              },
+              "author": {}
+            },
+            {
+              "id": 2,
+              "name": "Ріко",
+              "media": {},
+              "picture": {
+                "id": 6,
+                "sourcePath": "/assets/img/penguin/rico.png",
+                "mediaType": {},
+                "author": {}
+              },
+              "author": {}
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Речення",
+      "order": 2,
+      "lessons": [
+        {
+          "id": 5,
+          "name": "Привітання",
+          "order": 1,
+          "author": {
+            "lastName": "Петренко",
+            "firstName": "Петро"
+          },
+          "picture": {
+            "id": 1,
+            "sourcePath": "/assets/img/article/sentence/greeting/greeting.jpg",
             "mediaType": {},
             "author": {}
           },
@@ -47,13 +211,99 @@
           ]
         },
         {
-          "id": 2,
-          "name": "Інші пінгвіни",
+          "id": 6,
+          "name": "Вирази",
           "order": 2,
           "author": {},
           "picture": {
-            "id": 4,
-            "sourcePath": "/assets/img/penguin/penguins.jpg",
+            "id": 6,
+            "sourcePath": "/assets/img/article/sentence/phrases/phrases.jpg",
+            "mediaType": {},
+            "author": {}
+          },
+          "words": [
+            {
+              "id": 1,
+              "name": "Ковальські",
+              "media": {},
+              "picture": {
+                "id": 5,
+                "sourcePath": "/assets/img/penguin/kowalski.png",
+                "mediaType": {},
+                "author": {}
+              },
+              "author": {}
+            },
+            {
+              "id": 2,
+              "name": "Ріко",
+              "media": {},
+              "picture": {
+                "id": 6,
+                "sourcePath": "/assets/img/penguin/rico.png",
+                "mediaType": {},
+                "author": {}
+              },
+              "author": {}
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Математика",
+      "order": 3,
+      "lessons": [
+        {
+          "id": 7,
+          "name": "Цифри",
+          "order": 1,
+          "author": {
+            "lastName": "Петренко",
+            "firstName": "Петро"
+          },
+          "picture": {
+            "id": 7,
+            "sourcePath": "/assets/img/article/math/numbers/numbers.png",
+            "mediaType": {},
+            "author": {}
+          },
+          "words": [
+            {
+              "id": 1,
+              "name": "Шкіпер",
+              "media": {},
+              "picture": {
+                "id": 2,
+                "sourcePath": "/assets/img/penguin/skipper.png",
+                "mediaType": {},
+                "author": {}
+              },
+              "author": {}
+            },
+            {
+              "id": 2,
+              "name": "Рядовий",
+              "media": {},
+              "picture": {
+                "id": 3,
+                "sourcePath": "/assets/img/penguin/private.jpg",
+                "mediaType": {},
+                "author": {}
+              },
+              "author": {}
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "name": "Операції",
+          "order": 2,
+          "author": {},
+          "picture": {
+            "id": 8,
+            "sourcePath": "/assets/img/article/math/operations/operations.jpg",
             "mediaType": {},
             "author": {}
           },

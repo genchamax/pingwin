@@ -3,6 +3,7 @@
  */
 import {Media} from "./media";
 import {User} from "./user";
+import {WordState} from "./word_state";
 
 export class Word {
   id: number;
@@ -10,4 +11,5 @@ export class Word {
   media: Media;
   picture: Media;
   author: User;
+  wordState: WordState;
 }

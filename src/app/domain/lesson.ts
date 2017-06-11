@@ -11,4 +11,5 @@ export class Lesson {
   author: User;
   picture: Media;
   words: Word[];
+  point: number;
 }

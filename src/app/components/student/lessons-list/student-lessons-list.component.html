@@ -1,4 +1,4 @@
-<div *ngFor="let topic of topicsToLearn">
+<div *ngFor="let topic of topics">
   <div class="row">
     <div class="row lesson-name"><h1 class="lesson-name-text">
       {{ topic.name }}
@@ -10,9 +10,9 @@
                class="card-img-top rounded float-left lesson-img" alt="...">
           <h5 class="card-title lesson-text">{{lesson.name}}</h5>
           <!--<div class="main_info col-0.5">-->
-<!--          <a class="btn btn-info" href="#">
-            <i class="fa fa-plus fa-1x" aria-hidden="true"></i>
-          </a>-->
+            <a class="btn btn-info" href="#">
+              <i class="fa fa-plus fa-1x" aria-hidden="true"></i>
+            </a>
           <!--</div>-->
         </div>
       </div>
