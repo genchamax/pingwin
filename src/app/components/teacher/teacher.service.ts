@@ -5,6 +5,7 @@ import {Injectable} from "@angular/core";
 import {Http} from "@angular/http";
 import {Observable} from "rxjs";
 import {Topic} from "../../domain/topic";
+import {Lesson} from "../../domain/lesson";
 
 @Injectable()
 export class TeacherService {

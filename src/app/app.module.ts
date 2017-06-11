@@ -31,7 +31,7 @@ import {
   AccordionModule,
   ConfirmationService, ConfirmDialogModule,
   DataTableModule, GrowlModule,
-  SharedModule
+  SharedModule, TabViewModule
 } from "primeng/primeng";
 import {CarService} from "./components/student/dictionary/student-dictionary.service";
 import {TeacherComponent} from "./components/teacher/teacher.component";
@@ -76,6 +76,7 @@ import {TooltipModule} from "ngx-bootstrap";
     AccordionModule,
     DataTableModule,
     SharedModule,
+    TabViewModule,
     // TooltipModule,
     CKEditorModule,
     ConfirmDialogModule,

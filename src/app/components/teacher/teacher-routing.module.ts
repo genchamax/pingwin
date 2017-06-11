@@ -6,7 +6,7 @@ import {RouterModule, Routes} from "@angular/router";
 import {TeacherComponent} from "./teacher.component";
 import {TeacherService} from "./teacher.service";
 import {TopicOverviewComponent} from "./topic-overview/topic-overview.component";
-import {ConfirmationService, ConfirmDialogModule, SharedModule} from "primeng/primeng";
+import {ConfirmationService, ConfirmDialogModule, SharedModule, TabViewModule} from "primeng/primeng";
 
 const teacherRoutes: Routes = [
   {
@@ -22,7 +22,8 @@ const teacherRoutes: Routes = [
   imports: [
     RouterModule.forChild(teacherRoutes),
     ConfirmDialogModule,
-    SharedModule
+    SharedModule,
+    TabViewModule
   ],
   exports: [],
   providers: [
