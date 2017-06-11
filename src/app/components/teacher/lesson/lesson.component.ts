@@ -3,7 +3,7 @@
  */
 
 import {Component, Input} from "@angular/core";
-import {Lesson} from "../../domain/lesson";
+import {Lesson} from "../../../domain/lesson";
 
 @Component({
   moduleId: module.id,

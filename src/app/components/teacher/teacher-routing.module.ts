@@ -6,6 +6,7 @@ import {RouterModule, Routes} from "@angular/router";
 import {TeacherComponent} from "./teacher.component";
 import {TeacherService} from "./teacher.service";
 import {TopicOverviewComponent} from "./topic-overview/topic-overview.component";
+import {ConfirmationService, ConfirmDialogModule, SharedModule} from "primeng/primeng";
 
 const teacherRoutes: Routes = [
   {
@@ -19,11 +20,14 @@ const teacherRoutes: Routes = [
 
 @NgModule({
   imports: [
-    RouterModule.forChild(teacherRoutes)
+    RouterModule.forChild(teacherRoutes),
+    ConfirmDialogModule,
+    SharedModule
   ],
   exports: [],
   providers: [
-    TeacherService
+    TeacherService,
+    ConfirmationService
   ]
 })
 export class TeacherRoutingModule {

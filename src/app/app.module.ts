@@ -27,7 +27,12 @@ import {BlogService} from "./components/blog/blog.service";
 import {CKEditorModule} from "ng2-ckeditor";
 import {ArticlePreviewComponent} from "./components/blog/article-preview/article-preview.component";
 
-import {AccordionModule, DataTableModule, SharedModule} from "primeng/primeng";
+import {
+  AccordionModule,
+  ConfirmationService, ConfirmDialogModule,
+  DataTableModule,
+  SharedModule
+} from "primeng/primeng";
 import {CarService} from "./components/student/dictionary/student-dictionary.service";
 import {TeacherComponent} from "./components/teacher/teacher.component";
 import {TeacherService} from "./components/teacher/teacher.service";
@@ -83,7 +88,8 @@ import {TopicOverviewComponent} from "./components/teacher/topic-overview/topic-
     //fakeBackendProvider,
     //MockBackend,
     BaseRequestOptions,
-    TeacherService
+    // ConfirmationService
+
   ],
   bootstrap: [AppComponent]
 })

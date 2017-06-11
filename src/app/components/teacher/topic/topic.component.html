@@ -1,12 +1,22 @@
 <div class="topic-container">
-  <div *ngFor="let lesson of topic.lessons">
-    <p-accordion>
-      <p-accordionTab>
-        <p-header>
-          {{lesson.name}}
-        </p-header>
-        <pingwin-lesson [lesson]="lesson"></pingwin-lesson>
-      </p-accordionTab>
-    </p-accordion>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 btn-container">
+        <button class="btn btn-outline-primary">Додати урок до теми</button>
+        <button class="btn btn-outline-primary">Редагувати тему</button>
+        <p-confirmDialog width="425"></p-confirmDialog>
+        <button class="btn btn-outline-danger" (click)="deleteTopic()" label="Delete">Видалити тему</button>
+      </div>
+      <div *ngFor="let lesson of topic.lessons" class="col-md-12">
+        <p-accordion>
+          <p-accordionTab>
+            <p-header>
+              {{lesson.name}}
+            </p-header>
+            <pingwin-lesson [lesson]="lesson"></pingwin-lesson>
+          </p-accordionTab>
+        </p-accordion>
+      </div>
+    </div>
   </div>
 </div>
