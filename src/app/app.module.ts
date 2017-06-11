@@ -41,6 +41,7 @@ import {WordComponent} from "./components/teacher/word/word.component";
 import {LessonComponent} from "./components/teacher/lesson/lesson.component";
 import {TopicComponent} from "./components/teacher/topic/topic.component";
 import {TopicOverviewComponent} from "./components/teacher/topic-overview/topic-overview.component";
+import {TooltipModule} from "ngx-bootstrap";
 
 @NgModule({
   declarations: [
@@ -75,6 +76,7 @@ import {TopicOverviewComponent} from "./components/teacher/topic-overview/topic-
     AccordionModule,
     DataTableModule,
     SharedModule,
+    // TooltipModule,
     CKEditorModule,
     ConfirmDialogModule,
     GrowlModule,

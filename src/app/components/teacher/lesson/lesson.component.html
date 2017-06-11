@@ -10,6 +10,21 @@
           <div class="lesson-author-description col-md-12">
             Автор: <b>{{lesson.author.firstName}} {{lesson.author.lastName}}</b>
           </div>
+          <div class="col-md-12 btn-container">
+            <button class="btn btn-outline-primary" ngbTooltip="Додати слово до уроку" placement="bottom">
+              <i class="fa fa-plus"></i>
+            </button>
+            <button class="btn btn-outline-primary" ngbTooltip="Редагувати урок" placement="bottom">
+              <i class="fa fa-edit"></i>
+            </button>
+
+            <p-growl [(value)]="msgs" sticky="sticky"></p-growl>
+            <p-confirmDialog width="425"></p-confirmDialog>
+            <button class="btn btn-outline-danger" (click)="deleteLesson()" label="Delete" ngbTooltip="Видалити урок"
+                    placement="bottom">
+              <i class="fa fa-trash"></i>
+            </button>
+          </div>
         </div>
       </div>
 
