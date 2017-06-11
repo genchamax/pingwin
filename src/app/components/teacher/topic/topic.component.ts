@@ -16,6 +16,7 @@ import {ConfirmationService, Message} from "primeng/primeng";
 export class TopicComponent {
   @Input() topic: Topic;
   private confirmationService: ConfirmationService;
+
   msgs: Message[] = [];
 
   constructor(confirmationService: ConfirmationService) {

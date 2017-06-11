@@ -4,6 +4,7 @@
       <div class="col-md-12 btn-container">
         <button class="btn btn-outline-primary">Додати урок до теми</button>
         <button class="btn btn-outline-primary">Редагувати тему</button>
+        <p-growl [(value)]="msgs" sticky="sticky"></p-growl>
         <p-confirmDialog width="425"></p-confirmDialog>
         <button class="btn btn-outline-danger" (click)="deleteTopic()" label="Delete">Видалити тему</button>
       </div>

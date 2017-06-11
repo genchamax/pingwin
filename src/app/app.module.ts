@@ -30,7 +30,7 @@ import {ArticlePreviewComponent} from "./components/blog/article-preview/article
 import {
   AccordionModule,
   ConfirmationService, ConfirmDialogModule,
-  DataTableModule,
+  DataTableModule, GrowlModule,
   SharedModule
 } from "primeng/primeng";
 import {CarService} from "./components/student/dictionary/student-dictionary.service";
@@ -77,6 +77,7 @@ import {TopicOverviewComponent} from "./components/teacher/topic-overview/topic-
     SharedModule,
     CKEditorModule,
     ConfirmDialogModule,
+    GrowlModule,
     routing
   ],
   providers: [
