@@ -2,8 +2,8 @@
  * Created by Max on 04.06.2017.
  */
 import {Component, Input, OnInit} from "@angular/core";
-import {Article} from "../../../domain/article/article";
 import {BlogService} from "../blog.service";
+import {Article} from "../../../domain/article/article";
 import {ArticlePreview} from "../../../domain/article/article-preview";
 
 @Component({
@@ -24,5 +24,7 @@ export class ArticlePreviewComponent implements OnInit {
 
   ngOnInit(): void {
     this.articlePreview = this.blogService.toArticlePreview(this.article);
+    // console.log(this.article);
+    // console.log(this.articlePreview);
   }
 }

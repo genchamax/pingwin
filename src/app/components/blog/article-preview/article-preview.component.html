@@ -1,3 +1,10 @@
 <div class="article-preview-container">
-
+  <div class="article-preview-image" *ngIf="!!articlePreview.previewImage" [innerHtml]="articlePreview.previewImage"></div>
+  <h2 class="article-preview-title">{{articlePreview.articleTitle}}</h2>
+  <!--TODO: Test it-->
+  <div class="article-preview-image" *ngIf="!articlePreview.previewImage">
+    <div class="empty-image-article"></div>
+  </div>
+  <div class="article-preview-text" [innerHtml]="articlePreview.previewParagraph"></div>
+  <button class="btn btn-info">Read more...</button>
 </div>

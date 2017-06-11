@@ -54,6 +54,8 @@ import {TooltipModule} from "ngx-bootstrap";
     StudentProfileComponent,
     StudentTraningComponent,
     StudentDictionaryComponent,
+    StudentProfileComponent,
+    StudentTraningComponent,
     StudentLessonsListComponent,
 
     BlogComponent,
@@ -64,8 +66,11 @@ import {TooltipModule} from "ngx-bootstrap";
     TopicOverviewComponent,
     WordComponent,
     LessonComponent,
-    TopicComponent
+    TopicComponent,
 
+  //  Content Editor
+    StudentTraningComponent,
+    StudentDictionaryComponent
   ],
   imports: [
     BrowserModule,

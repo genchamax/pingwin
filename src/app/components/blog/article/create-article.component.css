@@ -1,5 +1,9 @@
 #article-create-wrapper {
-    margin-top: 100px;
+  margin-top: 60px;
+  background: #cfebfd;
+  width: 100%;
+  border-radius: 6px 0 0;
+  padding-top: 10px;
 }
 
 #article-title {
