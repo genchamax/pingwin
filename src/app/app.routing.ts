@@ -15,7 +15,6 @@ const appRoutes: Routes = [
     path: 'student', component: StudentComponent,
   },
   {path: 'blog', component: BlogComponent},
-  {path: 'blog/create', component: CreateArticleComponent},
   {path: '**', redirectTo: 'student'}
 ];
 

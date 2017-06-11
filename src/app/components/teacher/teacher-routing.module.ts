@@ -7,13 +7,15 @@ import {TeacherComponent} from "./teacher.component";
 import {TeacherService} from "./teacher.service";
 import {TopicOverviewComponent} from "./topic-overview/topic-overview.component";
 import {ConfirmationService, ConfirmDialogModule, SharedModule, TabViewModule} from "primeng/primeng";
+import {CreateArticleComponent} from "../blog/article/create-article.component";
 
 const teacherRoutes: Routes = [
   {
     path: 'teacher',
     component: TeacherComponent,
     children: [
-      {path: 'topic/overview', component: TopicOverviewComponent}
+      {path: 'topic/overview', component: TopicOverviewComponent},
+      {path: 'article/create', component: CreateArticleComponent}
     ]
   }
 ];

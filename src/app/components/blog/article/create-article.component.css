@@ -1,8 +1,5 @@
 #article-create-wrapper {
-  margin-top: 60px;
-  background: #cfebfd;
   width: 100%;
-  border-radius: 6px 0 0;
   padding-top: 10px;
 }
 
@@ -18,4 +15,13 @@
 
 .ct-widget .ct-ignition {
 
+}
+
+.create-article-preview-wrapper {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.create-article-preview-wrapper h3 {
+  text-align: center;
 }

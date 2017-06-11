@@ -19,8 +19,4 @@ export class CreateArticleComponent implements OnInit {
   ngOnInit(): void {
 
   }
-
-  public isViewMode(): boolean {
-    return !!~window.location.href.indexOf("/article/1");
-  }
 }
