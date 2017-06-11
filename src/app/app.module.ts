@@ -76,6 +76,7 @@ import {TopicOverviewComponent} from "./components/teacher/topic-overview/topic-
     DataTableModule,
     SharedModule,
     CKEditorModule,
+    ConfirmDialogModule,
     routing
   ],
   providers: [
@@ -88,6 +89,7 @@ import {TopicOverviewComponent} from "./components/teacher/topic-overview/topic-
     //fakeBackendProvider,
     //MockBackend,
     BaseRequestOptions,
+    ConfirmationService
     // ConfirmationService
 
   ],
