@@ -29,12 +29,7 @@
         <div *ngFor="let word of words">
           <p-accordionTab [header]="word.name">
             <div class="row">
-              <div class="col-md-9 btn-container">
-                  <button class="btn btn-outline-primary">Прив'язати слово до теми</button>
-                  <button class="btn btn-outline-primary">Редагувати слово</button>
-                  <button class="btn btn-outline-danger" (click)="deleteWord(word)" label="Delete">Видалити слово</button>
-              </div>
-              <div class="col-md-3">
+              <div class="col-md-12">
                 <pingwin-word [word]="word"></pingwin-word>
               </div>
             </div>

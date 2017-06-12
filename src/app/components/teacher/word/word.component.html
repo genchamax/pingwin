@@ -1,8 +1,32 @@
 <div class="word-container">
-  <div class="word-image-container">
-    <img [src]="word.picture.sourcePath"/>
-  </div>
-  <div class="word-name-container">
-    {{word.name}}
+  <div class="container">
+    <div class="row">
+
+      <div class="col-md-12 btn-container">
+        <button class="btn btn-outline-primary">Прив'язати слово до теми</button>
+        <button class="btn btn-outline-primary">Редагувати слово</button>
+        <button class="btn btn-outline-danger" (click)="deleteWord(word)" label="Delete">Видалити слово</button>
+      </div>
+
+      <!--<div class="col-12">-->
+        <!--<div class="word-name-container">-->
+          <!--{{word.name}}-->
+        <!--</div>-->
+      <!--</div>-->
+      <div class="col-5">
+        <div class="word-image-container">
+          <img [src]="word.picture.sourcePath"/>
+        </div>
+      </div>
+
+      <div class="col-7">
+        <div class="word-media-container">
+          <video controls loop>
+            <source [src]="word.media.sourcePath" type="video/mp4">
+          </video>
+        </div>
+      </div>
+
+    </div>
   </div>
 </div>

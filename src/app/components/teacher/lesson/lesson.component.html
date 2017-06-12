@@ -39,15 +39,15 @@
     </div>
 
     <p-accordion>
-      <p-accordionTab header="Слова, що входять до уроку">
-        <div class="lesson-words-container">
-          <div class="row">
-            <div *ngFor="let word of lesson.words" class="col-md-3">
+      <div class="lesson-words-container">
+        <div class="row">
+          <div *ngFor="let word of lesson.words" class="col-12">
+            <p-accordionTab [header]="word.name">
               <pingwin-word [word]="word"></pingwin-word>
-            </div>
+            </p-accordionTab>
           </div>
         </div>
-      </p-accordionTab>
+      </div>
     </p-accordion>
   </div>
 </div>

@@ -1,9 +1,9 @@
-.word-image-container {
+.word-image-container, .word-media-container {
   width: 100%;
-  height: 200px;
+  height: 300px;
 }
 
-.word-image-container img {
+.word-image-container img, .word-media-container video{
   max-width: 100%;
   height: 95%;
 }
