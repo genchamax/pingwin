@@ -36,3 +36,11 @@
 .lesson-text {
   width: 100px;
 }
+
+.modal-dialog {
+  height: auto;
+}
+
+.modal-content {
+  height: auto;
+}

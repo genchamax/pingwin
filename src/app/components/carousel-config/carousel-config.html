@@ -1,0 +1,9 @@
+<ngb-carousel>
+
+  <ng-template ngbSlide *ngFor="let word of words">
+    <img [src]="word.picture.sourcePath" alt="Random first slide">
+    <div class="carousel-caption">
+    <p>{{word.name}}</p>
+    </div>
+  </ng-template>
+</ngb-carousel>

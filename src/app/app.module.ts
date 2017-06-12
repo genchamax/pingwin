@@ -13,7 +13,7 @@ import {StudentProfileComponent} from "./components/student/profile/student-prof
 import {StudentTraningComponent} from "./components/student/training/student-traning.component";
 import {StudentDictionaryComponent} from "./components/student/dictionary/student-dictionary.component";
 
-import {NgbModule} from "@ng-bootstrap/ng-bootstrap";
+import {NgbCarouselConfig, NgbModule} from "@ng-bootstrap/ng-bootstrap";
 import {StudentRoutingModule} from "./components/student/student-routing.module";
 import {BlogComponent} from "./components/blog/blog.component";
 import {CreateArticleComponent} from "./components/blog/article/create-article.component";
@@ -32,6 +32,7 @@ import {TopicComponent} from "./components/teacher/topic/topic.component";
 import {TopicOverviewComponent} from "./components/teacher/topic-overview/topic-overview.component";
 import {StudentLessonsListComponent} from "./components/student/lessons-list/student-lessons-list.component";
 import {StudentLessonsListService} from "./components/student/student-lessons-list.service";
+import {NgbdCarouselConfig} from "./components/carousel-config/carousel-config";
 
 /*import {AuthGuard} from './components/auth/auth.guard';
  import {AuthenticationService} from "./components/auth/auth.service";
@@ -49,6 +50,7 @@ import {StudentLessonsListService} from "./components/student/student-lessons-li
     StudentTraningComponent,
     StudentDictionaryComponent,
     StudentLessonsListComponent,
+    NgbdCarouselConfig,
 
     BlogComponent,
     CreateArticleComponent,
@@ -88,7 +90,8 @@ import {StudentLessonsListService} from "./components/student/student-lessons-li
     //MockBackend,
     BaseRequestOptions,
     TeacherService,
-    StudentLessonsListService
+    StudentLessonsListService,
+    NgbCarouselConfig
   ],
   bootstrap: [AppComponent]
 })

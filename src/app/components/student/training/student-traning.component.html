@@ -1,5 +1,5 @@
 <div *ngFor="let topic of topicsToLearn">
-  <div class="row">
+  <div class="row" *ngIf="topic.lessons.length > 0">
     <div class="row lesson-name"><h1 class="lesson-name-text">
       {{ topic.name }}
     </h1></div>
@@ -9,13 +9,29 @@
           <img [src]="lesson.picture.sourcePath"
                class="card-img-top rounded float-left lesson-img" alt="...">
           <h5 class="card-title lesson-text">{{lesson.name}}</h5>
-          <!--<div class="main_info col-0.5">-->
-<!--          <a class="btn btn-info" href="#">
-            <i class="fa fa-plus fa-1x" aria-hidden="true"></i>
-          </a>-->
-          <!--</div>-->
+          <div class="main_info col-0.5">
+            <a class="btn btn-info">
+              <i (click)="open(content); initPickedLesson(lesson)" pickedLesson=lesson>Вивчати</i>
+            </a>
+            <a class="btn btn-info">
+              <i>Тренувати</i>
+            </a>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </div>
+
+<!--Learn words-->
+<ng-template #content let-c="close" let-d="dismiss">
+<!--  <div class="card lesson-card" *ngFor="let word of lesson.words">
+    <div class="modal-header">
+      {{word[1]}}
+    </div>
+  </div>-->
+  <div class="modal-body">
+    {{pickedLesson.name}}
+    <ngbd-carousel-config [words]=pickedLesson.words></ngbd-carousel-config>
+  </div>
+</ng-template>
