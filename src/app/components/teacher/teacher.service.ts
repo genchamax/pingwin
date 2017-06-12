@@ -5,6 +5,7 @@ import {Injectable} from "@angular/core";
 import {Http} from "@angular/http";
 import {Observable} from "rxjs";
 import {Topic} from "../../domain/topic";
+import {Lesson} from "../../domain/lesson";
 
 @Injectable()
 export class TeacherService {
@@ -16,9 +17,15 @@ export class TeacherService {
     this.http = http;
   }
 
-  public getTopic() : Observable<Topic[]> {
+  public getTopic(): Observable<Topic[]> {
     const requestUrl = "/assets/data/teacher/topics.json";
     return this.http.get(requestUrl)
       .map(response => response.json().topics as Topic[])
+  }
+
+  public getLessons(): Observable<Lesson[]> {
+    const requestUrl = "/assets/data/teacher/lessons.json";
+    return this.http.get(requestUrl)
+      .map(response => response.json().lessons as Lesson[])
   }
 }

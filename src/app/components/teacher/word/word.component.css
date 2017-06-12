@@ -1,11 +1,11 @@
-.word-image-container {
+.word-image-container, .word-media-container {
   width: 100%;
-  height: 100%;
+  height: 300px;
 }
 
-.word-image-container img {
-  width: 100%;
-  height: 100%;
+.word-image-container img, .word-media-container video{
+  max-width: 100%;
+  height: 95%;
 }
 
 .word-name-container {

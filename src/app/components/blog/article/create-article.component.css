@@ -1,5 +1,6 @@
 #article-create-wrapper {
-    margin-top: 100px;
+  width: 100%;
+  padding-top: 10px;
 }
 
 #article-title {
@@ -14,4 +15,13 @@
 
 .ct-widget .ct-ignition {
 
+}
+
+.create-article-preview-wrapper {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.create-article-preview-wrapper h3 {
+  text-align: center;
 }

@@ -1,0 +1,15 @@
+#blog-wrapper {
+  margin-top: 60px;
+  background: #cfebfd;
+  width: 100%;
+  border-radius: 6px 0 0;
+  padding-top: 10px;
+}
+
+.article-preview-image {
+  width: 100%;
+}
+
+.article-preview-image img {
+  width: 100%;
+}

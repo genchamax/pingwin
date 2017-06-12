@@ -23,7 +23,12 @@
             {
               "id": 1,
               "name": "Шкіпер",
-              "media": {},
+              "media": {
+                "id": 1,
+                "sourcePath": "https://media.spreadthesign.com/video/mp4/31/113166.mp4",
+                "mediaType": {},
+                "author": {}
+              },
               "picture": {
                 "id": 2,
                 "sourcePath": "/assets/img/penguin/skipper.png",
@@ -35,7 +40,12 @@
             {
               "id": 2,
               "name": "Рядовий",
-              "media": {},
+              "media": {
+                "id": 2,
+                "sourcePath": "https://media.spreadthesign.com/video/mp4/31/113166.mp4",
+                "mediaType": {},
+                "author": {}
+              },
               "picture": {
                 "id": 3,
                 "sourcePath": "/assets/img/penguin/private.jpg",
@@ -62,7 +72,12 @@
             {
               "id": 1,
               "name": "Ковальські",
-              "media": {},
+              "media": {
+                "id": 3,
+                "sourcePath": "https://media.spreadthesign.com/video/mp4/31/113166.mp4",
+                "mediaType": {},
+                "author": {}
+              },
               "picture": {
                 "id": 5,
                 "sourcePath": "/assets/img/penguin/kowalski.png",
@@ -74,7 +89,12 @@
             {
               "id": 2,
               "name": "Ріко",
-              "media": {},
+              "media": {
+                "id": 1,
+                "sourcePath": "https://media.spreadthesign.com/video/mp4/31/113166.mp4",
+                "mediaType": {},
+                "author": {}
+              },
               "picture": {
                 "id": 6,
                 "sourcePath": "/assets/img/penguin/rico.png",
@@ -101,7 +121,12 @@
             {
               "id": 1,
               "name": "Ковальські",
-              "media": {},
+              "media": {
+                "id": 1,
+                "sourcePath": "https://media.spreadthesign.com/video/mp4/31/113166.mp4",
+                "mediaType": {},
+                "author": {}
+              },
               "picture": {
                 "id": 5,
                 "sourcePath": "/assets/img/penguin/kowalski.png",
@@ -113,7 +138,12 @@
             {
               "id": 2,
               "name": "Ріко",
-              "media": {},
+              "media": {
+                "id": 1,
+                "sourcePath": "https://media.spreadthesign.com/video/mp4/31/113166.mp4",
+                "mediaType": {},
+                "author": {}
+              },
               "picture": {
                 "id": 6,
                 "sourcePath": "/assets/img/penguin/rico.png",
@@ -139,7 +169,12 @@
             {
               "id": 1,
               "name": "Ковальські",
-              "media": {},
+              "media": {
+                "id": 1,
+                "sourcePath": "https://media.spreadthesign.com/video/mp4/31/113166.mp4",
+                "mediaType": {},
+                "author": {}
+              },
               "picture": {
                 "id": 5,
                 "sourcePath": "/assets/img/penguin/kowalski.png",
@@ -151,7 +186,12 @@
             {
               "id": 2,
               "name": "Ріко",
-              "media": {},
+              "media": {
+                "id": 1,
+                "sourcePath": "https://media.spreadthesign.com/video/mp4/31/113166.mp4",
+                "mediaType": {},
+                "author": {}
+              },
               "picture": {
                 "id": 6,
                 "sourcePath": "/assets/img/penguin/rico.png",
@@ -187,7 +227,12 @@
             {
               "id": 1,
               "name": "Шкіпер",
-              "media": {},
+              "media": {
+                "id": 1,
+                "sourcePath": "https://media.spreadthesign.com/video/mp4/31/113166.mp4",
+                "mediaType": {},
+                "author": {}
+              },
               "picture": {
                 "id": 2,
                 "sourcePath": "/assets/img/penguin/skipper.png",
@@ -199,7 +244,12 @@
             {
               "id": 2,
               "name": "Рядовий",
-              "media": {},
+              "media": {
+                "id": 1,
+                "sourcePath": "https://media.spreadthesign.com/video/mp4/31/113166.mp4",
+                "mediaType": {},
+                "author": {}
+              },
               "picture": {
                 "id": 3,
                 "sourcePath": "/assets/img/penguin/private.jpg",
@@ -225,7 +275,12 @@
             {
               "id": 1,
               "name": "Ковальські",
-              "media": {},
+              "media": {
+                "id": 1,
+                "sourcePath": "https://media.spreadthesign.com/video/mp4/31/113166.mp4",
+                "mediaType": {},
+                "author": {}
+              },
               "picture": {
                 "id": 5,
                 "sourcePath": "/assets/img/penguin/kowalski.png",
@@ -237,7 +292,12 @@
             {
               "id": 2,
               "name": "Ріко",
-              "media": {},
+              "media": {
+                "id": 1,
+                "sourcePath": "https://media.spreadthesign.com/video/mp4/31/113166.mp4",
+                "mediaType": {},
+                "author": {}
+              },
               "picture": {
                 "id": 6,
                 "sourcePath": "/assets/img/penguin/rico.png",
@@ -273,7 +333,12 @@
             {
               "id": 1,
               "name": "Шкіпер",
-              "media": {},
+              "media": {
+                "id": 1,
+                "sourcePath": "https://media.spreadthesign.com/video/mp4/31/113166.mp4",
+                "mediaType": {},
+                "author": {}
+              },
               "picture": {
                 "id": 2,
                 "sourcePath": "/assets/img/penguin/skipper.png",
@@ -285,7 +350,12 @@
             {
               "id": 2,
               "name": "Рядовий",
-              "media": {},
+              "media": {
+                "id": 1,
+                "sourcePath": "https://media.spreadthesign.com/video/mp4/31/113166.mp4",
+                "mediaType": {},
+                "author": {}
+              },
               "picture": {
                 "id": 3,
                 "sourcePath": "/assets/img/penguin/private.jpg",
@@ -311,7 +381,12 @@
             {
               "id": 1,
               "name": "Ковальські",
-              "media": {},
+              "media": {
+                "id": 1,
+                "sourcePath": "https://media.spreadthesign.com/video/mp4/31/113166.mp4",
+                "mediaType": {},
+                "author": {}
+              },
               "picture": {
                 "id": 5,
                 "sourcePath": "/assets/img/penguin/kowalski.png",
@@ -323,7 +398,12 @@
             {
               "id": 2,
               "name": "Ріко",
-              "media": {},
+              "media": {
+                "id": 1,
+                "sourcePath": "https://media.spreadthesign.com/video/mp4/31/113166.mp4",
+                "mediaType": {},
+                "author": {}
+              },
               "picture": {
                 "id": 6,
                 "sourcePath": "/assets/img/penguin/rico.png",

@@ -10,12 +10,13 @@ import {Article} from "../../../domain/article/article";
   styleUrls: ["./create-article.component.css"]
 })
 
+//TODO Change component name to ArticleComponent
 export class CreateArticleComponent implements OnInit {
   article: Article = new Article;
+  articleId: number;
+
 
   ngOnInit(): void {
-    //FIXME: Write code here
-  }
 
-//  TODO Write method that replace double quotes to single qoutes
+  }
 }

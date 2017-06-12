@@ -1,0 +1,33 @@
+.article-preview-container {
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 10px;
+  border-radius: 6px 0 0;
+  background: whitesmoke;
+  padding: 10px;
+}
+
+.article-preview-image {
+  width: 100%;
+}
+
+:host /deep/ .article-preview-image > img {
+  position: relative;
+  width: 100%;
+  /*margin-left: 10%;*/
+  /*margin-right: 10%;*/
+}
+
+.article-preview-title h2{
+  position: absolute;
+  top: 200px;
+  left: 0;
+  width: 100%;
+}
+
+.empty-image-article {
+  position: relative;
+  width: 100px;
+  height: 100px;
+}

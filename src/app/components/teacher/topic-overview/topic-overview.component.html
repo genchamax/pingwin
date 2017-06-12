@@ -1,12 +1,42 @@
 <div class="container">
-  <div *ngFor="let topic of topics">
-    <p-accordion>
-      <p-accordionTab>
-        <p-header>
-          {{topic.name}}
-        </p-header>
-        <pingwin-topic [topic]="topic"></pingwin-topic>
-      </p-accordionTab>
-    </p-accordion>
-  </div>
+  <p-tabView>
+    <p-tabPanel header="Теми">
+      <div *ngFor="let topic of topics">
+        <p-accordion>
+          <p-accordionTab [header]="topic.name">
+            <pingwin-topic [topic]="topic"></pingwin-topic>
+          </p-accordionTab>
+        </p-accordion>
+      </div>
+    </p-tabPanel>
+
+    <p-tabPanel header="Уроки">
+      <p-accordion>
+        <div *ngFor="let lesson of lessons">
+          <p-accordionTab [header]="lesson.name">
+            <pingwin-lesson [lesson]="lesson"></pingwin-lesson>
+          </p-accordionTab>
+        </div>
+      </p-accordion>
+    </p-tabPanel>
+
+    <p-tabPanel header="Слова">
+      <p-accordion>
+
+        <p-growl [(value)]="msgs" sticky="sticky"></p-growl>
+        <p-confirmDialog width="425"></p-confirmDialog>
+
+        <div *ngFor="let word of words">
+          <p-accordionTab [header]="word.name">
+            <div class="row">
+              <div class="col-md-12">
+                <pingwin-word [word]="word"></pingwin-word>
+              </div>
+            </div>
+          </p-accordionTab>
+        </div>
+      </p-accordion>
+    </p-tabPanel>
+
+  </p-tabView>
 </div>

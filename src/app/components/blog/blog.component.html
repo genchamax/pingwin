@@ -1,5 +1,10 @@
-<div *ngFor="let article of articles">
-  <article-preview [article]="article">
-
-  </article-preview>
+<div class="container">
+  <div id="blog-wrapper">
+    <div class="row">
+      <div *ngFor="let article of articles" class="col-md-6">
+          <article-preview [article]="article">
+          </article-preview>
+      </div>
+    </div>
+  </div>
 </div>

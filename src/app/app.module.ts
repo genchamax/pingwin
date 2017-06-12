@@ -21,7 +21,12 @@ import {BlogService} from "./components/blog/blog.service";
 import {CKEditorModule} from "ng2-ckeditor";
 import {ArticlePreviewComponent} from "./components/blog/article-preview/article-preview.component";
 
-import {AccordionModule, DataTableModule, SharedModule} from "primeng/primeng";
+import {
+  AccordionModule,
+  ConfirmationService, ConfirmDialogModule,
+  DataTableModule, GrowlModule,
+  SharedModule, TabViewModule
+} from "primeng/primeng";
 import {CarService} from "./components/student/dictionary/student-dictionary.service";
 import {TeacherComponent} from "./components/teacher/teacher.component";
 import {TeacherService} from "./components/teacher/teacher.service";
@@ -40,6 +45,8 @@ import {NgbdCarouselConfig} from "./components/carousel-config/carousel-config";
  import {MockBackend} from "@angular/http/testing";
  import {fakeBackendProvider} from "./components/auth/auth.helper";*/
 /*Student*/
+import {TooltipModule} from "ngx-bootstrap";
+import {TeacherProfileComponent} from "./components/teacher/profile/teacher-profile.component";
 
 @NgModule({
   declarations: [
@@ -49,6 +56,8 @@ import {NgbdCarouselConfig} from "./components/carousel-config/carousel-config";
     StudentProfileComponent,
     StudentTraningComponent,
     StudentDictionaryComponent,
+    StudentProfileComponent,
+    StudentTraningComponent,
     StudentLessonsListComponent,
     NgbdCarouselConfig,
 
@@ -60,8 +69,12 @@ import {NgbdCarouselConfig} from "./components/carousel-config/carousel-config";
     TopicOverviewComponent,
     WordComponent,
     LessonComponent,
-    TopicComponent
+    TopicComponent,
 
+    TeacherProfileComponent,
+  //  Content Editor
+    StudentTraningComponent,
+    StudentDictionaryComponent
   ],
   imports: [
     BrowserModule,
@@ -76,7 +89,11 @@ import {NgbdCarouselConfig} from "./components/carousel-config/carousel-config";
     AccordionModule,
     DataTableModule,
     SharedModule,
+    TabViewModule,
+    // TooltipModule,
     CKEditorModule,
+    ConfirmDialogModule,
+    GrowlModule,
     routing
   ],
   providers: [
@@ -89,6 +106,9 @@ import {NgbdCarouselConfig} from "./components/carousel-config/carousel-config";
     //fakeBackendProvider,
     //MockBackend,
     BaseRequestOptions,
+    ConfirmationService,
+    // ConfirmationService
+
     TeacherService,
     StudentLessonsListService,
     NgbCarouselConfig
