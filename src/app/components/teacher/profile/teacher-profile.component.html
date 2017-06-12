@@ -1,0 +1,31 @@
+<div class="container">
+  <div class="row">
+    <div class="img-profile col-4">
+      <img src="../../../../assets/img/teacher/teacher.png" class="rounded float-left" alt="...">
+    </div>
+
+    <div class="main_info col-7">
+      <h3>Педагог Олена</h3>
+      <h4>вік: 26</h4>
+      <h4>Створено уроків: {{lessons.length}}</h4>
+    </div>
+
+    <div class="main_info col-1">
+      <button class="btn btn-outline-primary" ngbTooltip="Редагувати профіль">
+        <i class="fa fa-pencil-square-o fa-1x"></i>
+      </button>
+    </div>
+
+    <div class="col-12">
+      <h4>Мої уроки</h4>
+      <p-accordion>
+        <div *ngFor="let lesson of lessons">
+          <p-accordionTab [header]="lesson.name">
+            <pingwin-lesson [lesson]="lesson"></pingwin-lesson>
+          </p-accordionTab>
+        </div>
+      </p-accordion>
+    </div>
+  </div>
+</div>
+

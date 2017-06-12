@@ -45,6 +45,7 @@ import {StudentLessonsListService} from "./components/student/student-lessons-li
  import {fakeBackendProvider} from "./components/auth/auth.helper";*/
 /*Student*/
 import {TooltipModule} from "ngx-bootstrap";
+import {TeacherProfileComponent} from "./components/teacher/profile/teacher-profile.component";
 
 @NgModule({
   declarations: [
@@ -68,6 +69,7 @@ import {TooltipModule} from "ngx-bootstrap";
     LessonComponent,
     TopicComponent,
 
+    TeacherProfileComponent,
   //  Content Editor
     StudentTraningComponent,
     StudentDictionaryComponent
