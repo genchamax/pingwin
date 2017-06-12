@@ -2,6 +2,9 @@
 
   <ng-template ngbSlide *ngFor="let word of words">
     <img [src]="word.picture.sourcePath" alt="Random first slide">
+    <video controls loop>
+      <source [src]="word.media.sourcePath" type="video/mp4">
+    </video>
     <div class="carousel-caption">
     <p>{{word.name}}</p>
     </div>

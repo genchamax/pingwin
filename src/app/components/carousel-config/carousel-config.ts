@@ -8,6 +8,7 @@ import {Word} from "../../domain/word";
 @Component({
   selector: 'ngbd-carousel-config',
   templateUrl: 'carousel-config.html',
+  styleUrls: ['./carousel-config.css'],
   providers: [NgbCarouselConfig] // add NgbCarouselConfig to the component providers
 })
 export class NgbdCarouselConfig {
