@@ -6,16 +6,20 @@
     <div class="row lesson-card-group">
       <div class="card lesson-card" *ngFor="let lesson of topic.lessons">
         <div class="lesson-content">
-          <img [src]="lesson.picture.sourcePath"
-               class="card-img-top rounded float-left lesson-img" alt="...">
-          <h5 class="card-title lesson-text">{{lesson.name}}</h5>
-          <div class="main_info col-0.5">
-            <a class="btn btn-info">
-              <i (click)="open(content); initPickedLesson(lesson)" pickedLesson=lesson>Вивчати</i>
-            </a>
-            <a class="btn btn-info">
-              <i>Тренувати</i>
-            </a>
+          <div class="card-block">
+            <img [src]="lesson.picture.sourcePath"
+                 class="rounded lesson-img" alt="...">
+          </div>
+          <div class="card-block">
+            <h5 class="card-title lesson-text">{{lesson.name}}</h5>
+            <div class="main_info col-0.5">
+              <a class="btn btn-info">
+                <i (click)="open(content); initPickedLesson(lesson)" pickedLesson=lesson>Вивчати</i>
+              </a>
+              <a class="btn btn-info">
+                <i>Тренувати</i>
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -25,11 +29,11 @@
 
 <!--Learn words-->
 <ng-template #content let-c="close" let-d="dismiss">
-<!--  <div class="card lesson-card" *ngFor="let word of lesson.words">
-    <div class="modal-header">
-      {{word[1]}}
-    </div>
-  </div>-->
+  <!--  <div class="card lesson-card" *ngFor="let word of lesson.words">
+      <div class="modal-header">
+        {{word[1]}}
+      </div>
+    </div>-->
   <div class="modal-body">
     <ngbd-carousel-config [words]=pickedLesson.words></ngbd-carousel-config>
   </div>

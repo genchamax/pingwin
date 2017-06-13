@@ -2,8 +2,8 @@
  * Created by LWells on 5/30/2017.
  */
 import {Component, OnInit} from '@angular/core';
-import {Car} from "../../../domain/car";
-import {CarService} from "./student-dictionary.service";
+import {StudentLessonsListService} from "../student-lessons-list.service";
+import {Word} from "../../../domain/word";
 
 @Component({
   moduleId: module.id,
@@ -12,21 +12,23 @@ import {CarService} from "./student-dictionary.service";
 })
 
 export class StudentDictionaryComponent implements OnInit {
-  cars: Car[];
+  words: Word[];
 
-  constructor(private carService: CarService) {
+  constructor(private studentLessonsListService: StudentLessonsListService) {
   }
 
   ngOnInit() {
-    this.carService.getCarsMedium().subscribe(cars => {
-      console.log(cars);
-      this.cars = cars
+    this.studentLessonsListService.getTopics().subscribe(topics => {
+      this.words = [];
+      for (let topic of topics) {
+        for (let lesson of topic.lessons) {
+          for (let word of lesson.words) {
+            this.words.push(word);
+          }
+        }
+      }
+      console.log(this.words);
     });
-    console.log("call2");
-    /*    this.carService.getCarsMedium().then(function (cars) {
-     cars => this.cars = cars;
-     console.log(cars)
-     });*/
   }
 }
 

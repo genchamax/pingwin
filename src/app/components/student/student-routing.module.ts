@@ -7,8 +7,7 @@ import {StudentComponent} from "./student.component";
 import {StudentProfileComponent} from "./profile/student-profile.component";
 import {StudentTraningComponent} from "./training/student-traning.component";
 import {StudentDictionaryComponent} from "./dictionary/student-dictionary.component";
-import {AccordionModule, DataTableModule, DropdownModule, SliderModule } from 'primeng/primeng';
-import {CarService} from "./dictionary/student-dictionary.service";
+import {AccordionModule, DataTableModule, SharedModule, DropdownModule, SliderModule } from 'primeng/primeng';
 import {StudentLessonsListComponent} from "./lessons-list/student-lessons-list.component";
 import {StudentLessonsListService} from "./student-lessons-list.service";
 
@@ -44,6 +43,7 @@ const studentRoutes: Routes = [
     RouterModule.forChild(studentRoutes),
     AccordionModule,
     DataTableModule,
+    SharedModule,
     DropdownModule,
     SliderModule,
   ],
@@ -51,7 +51,6 @@ const studentRoutes: Routes = [
     RouterModule
   ],
   providers: [
-    CarService,
     StudentLessonsListService
   ]
 })

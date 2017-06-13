@@ -24,10 +24,8 @@ import {ArticlePreviewComponent} from "./components/blog/article-preview/article
 import {
   AccordionModule,
   ConfirmationService, ConfirmDialogModule,
-  DataTableModule, GrowlModule,
-  SharedModule, TabViewModule
+  DataTableModule, SharedModule, GrowlModule, TabViewModule
 } from "primeng/primeng";
-import {CarService} from "./components/student/dictionary/student-dictionary.service";
 import {TeacherComponent} from "./components/teacher/teacher.component";
 import {TeacherService} from "./components/teacher/teacher.service";
 import {TeacherRoutingModule} from "./components/teacher/teacher-routing.module";
@@ -96,7 +94,6 @@ import {TeacherProfileComponent} from "./components/teacher/profile/teacher-prof
     //AuthGuard,
     //AuthenticationService,
     //UserService,
-    CarService,
     BlogService,
     // providers used to create fake backend
     //fakeBackendProvider,
