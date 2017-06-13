@@ -18,11 +18,11 @@
       "words": [
         {
           "id": 1,
-          "name": "Шкіпер",
+          "name": "А",
           "media": {},
           "picture": {
             "id": 2,
-            "sourcePath": "/assets/img/penguin/skipper.png",
+            "sourcePath": "/assets/img/article/language/alphabet/words/А.jpg",
             "mediaType": {},
             "author": {}
           },
@@ -30,11 +30,23 @@
         },
         {
           "id": 2,
-          "name": "Рядовий",
+          "name": "Б",
           "media": {},
           "picture": {
             "id": 3,
-            "sourcePath": "/assets/img/penguin/private.jpg",
+            "sourcePath": "/assets/img/article/language/alphabet/words/Б.jpg",
+            "mediaType": {},
+            "author": {}
+          },
+          "author": {}
+        },
+        {
+          "id": 3,
+          "name": "В",
+          "media": {},
+          "picture": {
+            "id": 31,
+            "sourcePath": "/assets/img/article/language/alphabet/words/В.jpg",
             "mediaType": {},
             "author": {}
           },

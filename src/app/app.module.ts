@@ -53,13 +53,11 @@ import {TeacherProfileComponent} from "./components/teacher/profile/teacher-prof
     AppComponent,
     LoginComponent,
     StudentComponent,
-    StudentProfileComponent,
-    StudentTraningComponent,
     StudentDictionaryComponent,
     StudentProfileComponent,
-    StudentTraningComponent,
     StudentLessonsListComponent,
     NgbdCarouselConfig,
+    StudentTraningComponent,
 
     BlogComponent,
     CreateArticleComponent,
@@ -73,8 +71,6 @@ import {TeacherProfileComponent} from "./components/teacher/profile/teacher-prof
 
     TeacherProfileComponent,
   //  Content Editor
-    StudentTraningComponent,
-    StudentDictionaryComponent
   ],
   imports: [
     BrowserModule,

@@ -22,7 +22,7 @@
           "words": [
             {
               "id": 1,
-              "name": "Шкіпер",
+              "name": "А",
               "media": {
                 "id": 1,
                 "sourcePath": "https://media.spreadthesign.com/video/mp4/31/113166.mp4",
@@ -31,7 +31,7 @@
               },
               "picture": {
                 "id": 2,
-                "sourcePath": "/assets/img/penguin/skipper.png",
+                "sourcePath": "/assets/img/article/language/alphabet/words/А.jpg",
                 "mediaType": {},
                 "author": {}
               },
@@ -39,16 +39,33 @@
             },
             {
               "id": 2,
-              "name": "Рядовий",
+              "name": "Б",
               "media": {
                 "id": 2,
-                "sourcePath": "https://media.spreadthesign.com/video/mp4/31/113166.mp4",
+                "sourcePath": "https://media.spreadthesign.com/video/mp4/31/104815.mp4",
                 "mediaType": {},
                 "author": {}
               },
               "picture": {
                 "id": 3,
-                "sourcePath": "/assets/img/penguin/private.jpg",
+                "sourcePath": "/assets/img/article/language/alphabet/words/Б.jpg",
+                "mediaType": {},
+                "author": {}
+              },
+              "author": {}
+            },
+            {
+              "id": 3,
+              "name": "В",
+              "media": {
+                "id": 31,
+                "sourcePath": "https://media.spreadthesign.com/video/mp4/31/115539.mp4",
+                "mediaType": {},
+                "author": {}
+              },
+              "picture": {
+                "id": 31,
+                "sourcePath": "/assets/img/article/language/alphabet/words/В.jpg",
                 "mediaType": {},
                 "author": {}
               },
