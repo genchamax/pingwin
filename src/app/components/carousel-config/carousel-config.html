@@ -1,12 +1,19 @@
 <ngb-carousel>
-
   <ng-template ngbSlide *ngFor="let word of words">
-    <img [src]="word.picture.sourcePath" alt="Random first slide">
-    <video controls loop>
-      <source [src]="word.media.sourcePath" type="video/mp4">
-    </video>
-    <div class="carousel-caption">
-    <p>{{word.name}}</p>
+    <div class="container carousel-content-wrapper">
+      <div class="row">
+        <div class="col-4 carousel-image-wrapper">
+          <img [src]="word.picture.sourcePath" alt="Random first slide">
+        </div>
+        <div class="col-8 carousel-video-wrapper">
+          <video autoplay loop>
+            <source [src]="word.media.sourcePath" type="video/mp4">
+          </video>
+        </div>
+        <div class="carousel-caption">
+          <p>{{word.name}}</p>
+        </div>
+      </div>
     </div>
   </ng-template>
 </ngb-carousel>
