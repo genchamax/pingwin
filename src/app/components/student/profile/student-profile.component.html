@@ -9,7 +9,7 @@
       <h3>школа: Школа №32</h3>
     </div>
     <div class="main_info col-0.5">
-      <a class="btn btn-info" href="#">
+      <a class="btn btn-info" (click)="open(content)">
         <i class="fa fa-pencil-square-o fa-1x" aria-hidden="true"></i>
       </a>
     </div>
@@ -21,4 +21,24 @@
     <ngb-progressbar class="student-progres col-11" type="info" [value]="30" [striped]="true">250 слів</ngb-progressbar>
   </div>
 </div>
+
+<ng-template #content let-c="close" let-d="dismiss">
+  <div class="modal-body">
+    <section class="section section&#45;&#45;steps login">
+      <form name="form">
+        <div class="form-group">
+          <label>Пароль</label>
+          <input type="password" class="form-control">
+        </div>
+        <div class="form-group">
+          <label>Повторити пароль</label>
+          <input type="password" class="form-control">
+        </div>
+        <div class="form-group">
+          <button class="btn btn-primary accent-btn">Змінити пароль</button>
+        </div>
+      </form>
+    </section>
+  </div>
+</ng-template>
 

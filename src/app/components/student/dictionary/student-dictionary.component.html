@@ -3,10 +3,22 @@
     <i class="fa fa-search" style="margin:4px 4px 0 0"></i>
     <input #gb type="text" pInputText size="50" placeholder="Global Filter">
   </div>
-  <p-dataTable [value]="words" [rows]="10" [paginator]="true" [globalFilter]="gb">
+  <p-dataTable [value]="words" [rows]="10" [paginator]="true" [globalFilter]="gb" expandableRows="true">
+    <p-column expander="true"></p-column>
     <p-column field="name" header="Слово"></p-column>
-<!--    <p-column field="year" header="Year"></p-column>
-    <p-column field="brand" header="Brand"></p-column>
-    <p-column field="color" header="Color"></p-column>-->
+    <ng-template let-word pTemplate="rowexpansion">
+      <div class="ui-grid ui-grid-responsive ui-fluid" style="font-size:16px;padding:20px">
+        <div class="ui-grid-row">
+          <div class="ui-grid-col-7" style="text-align:center">
+            <img [src]="word.picture.sourcePath">
+          </div>
+          <div class="ui-grid-col-3" style="text-align:center">
+            <video autoplay loop>
+              <source [src]="word.media.sourcePath" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+    </ng-template>
   </p-dataTable>
 </div>
