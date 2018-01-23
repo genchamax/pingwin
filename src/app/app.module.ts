@@ -27,7 +27,6 @@ import {
   DataTableModule, GrowlModule,
   SharedModule, TabViewModule
 } from 'primeng/primeng';
-import {CarService} from './components/student/dictionary/student-dictionary.service';
 import {TeacherComponent} from './components/teacher/teacher.component';
 import {TeacherService} from './components/teacher/teacher.service';
 import {TeacherRoutingModule} from './components/teacher/teacher-routing.module';
@@ -46,6 +45,7 @@ import {StudentLessonsListService} from './components/student/student-lessons-li
 /*Student*/
 import {TooltipModule} from 'ngx-bootstrap';
 import {TeacherProfileComponent} from './components/teacher/profile/teacher-profile.component';
+import {NgbdCarouselConfig} from './components/carousel-config/carousel-config';
 
 @NgModule({
   declarations: [
@@ -97,7 +97,6 @@ import {TeacherProfileComponent} from './components/teacher/profile/teacher-prof
     // AuthGuard,
     // AuthenticationService,
     // UserService,
-    CarService,
     BlogService,
     // providers used to create fake backend
     // fakeBackendProvider,
